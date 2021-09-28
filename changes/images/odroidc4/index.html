@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Odroid C4/HC4 Images Changes Log - Archdroid</title>
+
+		<meta name="author" content="jgmdev">
+		<meta name="web-author" content="redtide">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Atom Feeds -->
+		<link href="/archdroid-org.github.io/atom.xml" rel="alternate" title="News" type="application/atom+xml" />
+
+				<!-- Favicon Generator Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/archdroid-org.github.io/assets/ico/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/archdroid-org.github.io/assets/ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/archdroid-org.github.io/assets/ico/favicon-16x16.png">
+		<link rel="manifest" href="/archdroid-org.github.io/assets/ico/site.webmanifest">
+		<link rel="mask-icon" href="/archdroid-org.github.io/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/archdroid-org.github.io/assets/ico/favicon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-config" content="/archdroid-org.github.io/assets/ico/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Stylesheets -->
+		<link href="/archdroid-org.github.io/assets/css/style.min.css" rel="stylesheet" media="screen">
+				<link href="/archdroid-org.github.io/assets/css/bootstrap-table.min.css" rel="stylesheet">
+
+		<!-- Font Awesome Icons -->
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/solid.js"       integrity="sha384-Mf3ap7OwO+bjTkzM1RsrothLh38uKXvMWJ2TQPXGHqZcqfeI/cyCV+sfV0IDnBDq" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/brands.js"      integrity="sha384-b2GpqFrJizV0BUEdbrITdOA5HnxnlrErt7MlEERWd6NSJ32rHeibEvyyCuA13OAS" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/fontawesome.js" integrity="sha384-EYYaHDhIRoBhd/Ir/1fPnxg9rZLk/55lKtlNT5KrIcONoCS2kjf7ZWzMoCLLACeo" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+
+	<button
+		data-localize="site_scroll_top"
+		onclick="topFunction()"
+		id="scrollButton"
+		title="Go to top"
+	>
+		Top
+	</button>
+	<a href="#content" class="sr-only">Skip to content</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a
+					id="logo-link"
+					class="navbar-brand"
+					href="/archdroid-org.github.io/"
+				>
+					<img
+						class="d-inline-block align-top"
+						src="/archdroid-org.github.io/assets/img/logo.svg"
+						height="32" alt=""
+					></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-target="#navbarContent"
+					data-toggle="collapse"
+					aria-controls="navbarContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ml-auto">
+
+						<li class="nav-item dropdown">
+							<a
+								id="navbarMenuLang"
+								class="nav-link dropdown-toggle font-weight-bold"
+								data-toggle="dropdown"
+								aria-expanded="false"
+								aria-haspopup="true"
+								href="#"
+							>
+								<img
+									width="16" height="11" style="border:0"
+									id="language-image"
+									src="/archdroid-org.github.io/assets/flags/en.png"
+								>
+							</a>
+							<div
+								id="language-menu"
+								class="dropdown-menu"
+								data-default="en"
+								aria-labelledby="navbarMenuLang"
+							>
+			
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="en"
+				href="/archdroid-org.github.io/en/"
+			>
+				<img
+					src="/archdroid-org.github.io/assets/flags/en.png"
+					width="16" height="11" style="border:0"
+				>
+				English
+			</a>
+	
+			
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="es"
+				href="/archdroid-org.github.io/es/"
+			>
+				<img
+					src="/archdroid-org.github.io/assets/flags/es.png"
+					width="16" height="11" style="border:0"
+				>
+				Español
+			</a>
+	
+			
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="it"
+				href="/archdroid-org.github.io/it/"
+			>
+				<img
+					src="/archdroid-org.github.io/assets/flags/it.png"
+					width="16" height="11" style="border:0"
+				>
+				Italiano
+			</a>
+	
+							</div>
+						</li>
+
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_packages"
+								href="/archdroid-org.github.io/packages/"
+							>
+								Packages
+							</a>
+	
+						</li>
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_mirrors"
+								href="/archdroid-org.github.io/en/mirrors/"
+							>
+								Mirrors
+							</a>
+	
+						</li>
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_images"
+								href="/archdroid-org.github.io/en/images/"
+							>
+								Images
+							</a>
+	
+						</li>
+
+	
+		
+		
+						<li class="nav-item dropdown">
+							<a
+								id="navbar_follow_us"
+								class="nav-link dropdown-toggle font-weight-bold"
+								data-localize="menu_follow_us"
+								data-toggle="dropdown"
+								aria-expanded="false"
+								aria-haspopup="true"
+								href="#"
+							>
+								Follow Us
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbar_follow_us"
+							>
+		
+			
+				
+				<a
+					class="dropdown-item font-weight-bold"
+					href="https://github.com/archdroid-org/"
+				><i
+						class="fab fa-github fa-fw"
+						aria-hidden="true"
+					></i>&nbsp;<span data-localize="menu_github">GitHub</span>
+				</a>
+			
+		
+			
+				
+				<a
+					class="dropdown-item font-weight-bold"
+					href="/archdroid-org.github.io/atom.xml"
+				><i
+						class="fas fa-rss fa-fw"
+						aria-hidden="true"
+					></i>&nbsp;<span data-localize="menu_feed">Feed</span>
+				</a>
+			
+		
+							</div>
+	
+						</li>
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_news"
+								href="/archdroid-org.github.io/news/"
+							>
+								News
+							</a>
+	
+						</li>
+
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_search"
+								href="/archdroid-org.github.io/search/"
+							>
+								Search</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+	<div class="container-fluid">
+		<div id="content">
+			<article>
+
+				<h1>Odroid C4/HC4 Images Changes Log</h1>
+
+				<p>Changes Log for the various disk images of this device.</p>
+
+<h2 id="gnome">GNOME</h2>
+
+<p><strong>Date - 30/12/2020</strong></p>
+<ul>
+  <li>Improved initial setup script to not require a system reboot, so the system
+doesn’t reboots anymore after reaching login manager.</li>
+  <li>Recent build of mesa-arm-git which seems to have fixed some rendering issues
+on supertuxkart and have better performance.</li>
+  <li>Default /boot/boot.ini now has the bootlabel set to “ArchLinux GNOME Lite”
+by the image generator.</li>
+  <li>Latest software updates.</li>
+</ul>
+
+<p><strong>Date - 21/12/2020</strong></p>
+<ul>
+  <li>Switch to panfrost mesa driver from mali binary drivers.</li>
+  <li>Use 5.10 kernel with panfrost patches from tobetter linux branch in order to
+also properly support the hc4.</li>
+  <li>Includes recently build mesa from git with panfrost support and automated
+builds are automatically fetched from the pamac update manager.</li>
+  <li>Added hc4 enabled uboot-odroid-c4 package.</li>
+  <li>Use uuid on /boot/boot.ini and /etc/fstab instead of devices names to prevent
+possible boot issues.</li>
+  <li>Latest software updates.</li>
+</ul>
+
+<p><strong>Date - 23/10/2020</strong></p>
+<ul>
+  <li>First release</li>
+</ul>
+
+<h2 id="xfce">XFCE</h2>
+
+<p><strong>Date - 29/12/2020</strong></p>
+<ul>
+  <li>Improved initial setup script to not require a system reboot, so the system
+doesn’t reboots anymore after reaching login manager.</li>
+</ul>
+
+<p><strong>Date - 29/12/2020</strong></p>
+<ul>
+  <li>Updated kernel to 5.10.2</li>
+  <li>Fixed initial setup script to properly resize root partition on first boot.</li>
+  <li>Included recent build of mesa-arm-git which seems to have fixed some
+rendering issues on supertuxkart and have better performance.</li>
+  <li>Default /boot/boot.ini now has the bootlabel set to “ArchLinux XFCE” by the
+image generator.</li>
+</ul>
+
+<p><strong>Date - 21/12/2020</strong></p>
+<ul>
+  <li>Switched to panfrost mesa driver from mali binary driver.</li>
+  <li>Use 5.10 kernel with panfrost patches from tobetter linux branch in order
+to also properly support the hc4.</li>
+  <li>Includes recently build mesa from git with panfrost support and automated
+builds are automatically fetched from the pamac update manager.</li>
+  <li>Added hc4 enabled uboot-odroid-c4 package.</li>
+  <li>Use uuid on /boot/boot.ini and /etc/fstab instead of devices names to
+prevent possible boot issues.</li>
+</ul>
+
+<p><strong>Date - 23/10/2020</strong></p>
+<ul>
+  <li>Changed kernel name from linux-odroid-c4 to linux-odroid-g12 in an effort
+to unify kernel builds for N2 and C4,</li>
+  <li>Improved uboot-odroid-c4 to generate proper boot.ini if changing
+from 4.9 kernel to 5.x.</li>
+  <li>Added newer odroid-c4-libgl-fb package that can coexist with
+odroid-c4-libgl-wl package. Also both packages include a helper script
+(odroid-mali-wl, odroid-mali-fb) to run applications with that specific
+libMali version. Run odroid-mali-wl or odroid-mali-fb for usage instructions.</li>
+  <li>Updated odroid-gl4es package that includes tool that can be used to
+enable/disable it as to run applications with gl4es even if disabled,
+for usage run odroid-gl4es.</li>
+  <li>Latest software updates.</li>
+</ul>
+
+<p><strong>Date - 24/08/2020</strong></p>
+<ul>
+  <li>Updated kernel to 4.9.230 kernel which has updated wifi module driver.</li>
+  <li>Set kernel timer frequency to 1000hz.</li>
+  <li>Enabled Automatic process group scheduling</li>
+  <li>Disabled NSA SELinux</li>
+  <li>Disabled integrity subsystem</li>
+  <li>Added odroid-alsa package.</li>
+  <li>Added automatic resizing of system partition, generation of locales and
+setup of /etc/fstab</li>
+  <li>Fixed booting from emmc module when sdcard is not present by properly
+setting up /etc/fstab</li>
+  <li>Updated odroid-gl4es and added shell script to easily disable/enable it
+(run odroid-gl4es for usage info).</li>
+  <li>Added realtime privileges to alarm user for pro-audio.</li>
+</ul>
+
+<p><strong>Date - 20/05/2020</strong></p>
+<ul>
+  <li>First release</li>
+</ul>
+
+<h2 id="wayfire">Wayfire</h2>
+
+<p><strong>Date - 05/01/2021</strong></p>
+<ul>
+  <li>Added updated mesa-arm-git package.</li>
+  <li>Dropped libva-mesa-driver (now included with mesa-arm-git).</li>
+</ul>
+
+<p><strong>Date - 31/12/2020</strong></p>
+<ul>
+  <li>Added support for HC4</li>
+  <li>Includes kernel 5.10.2 with chewitt panfrost patches and tobetter patches.</li>
+  <li>Switched from mali drivers to mesa+panfrost.</li>
+  <li>Improved initial setup script to not require a system reboot, so the system
+doesn’t reboots anymore after reaching login manager.</li>
+  <li>Default /boot/boot.ini now has the bootlabel set to “ArchLinux Wayfire” by
+the image generator.</li>
+  <li>Use uuid on /boot/boot.ini and /etc/fstab instead of devices names to prevent
+possible boot issues.</li>
+</ul>
+
+<p><strong>Date - 03/06/2020</strong></p>
+<ul>
+  <li>First release</li>
+</ul>
+
+			</article>
+		</div>
+			<hr>
+			<footer>
+				<p style="text-align:left;">
+					<span data-localize="footer_copyright">Copyright</span>
+						&copy; 2021
+					<a data-localize="footer_team" href="/archdroid-org.github.io/team">
+						Archdroid Team</a>
+				</p>
+			</footer>
+
+	</div>
+		<script src="/archdroid-org.github.io/assets/js/scripts.min.js"></script>		<script type="text/javascript" src="/archdroid-org.github.io/assets/js/bootstrap-table.min.js"></script>
+		<script type="text/javascript" src="/archdroid-org.github.io/assets/js/jquery.localize.js"></script>
+		<script type="text/javascript" src="/archdroid-org.github.io/assets/js/language.js"></script>
+
+
+	</body>
+</html>
