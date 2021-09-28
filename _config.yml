@@ -50,5 +50,5 @@ locale:
   default: "en"
 
 authors:
-  content: "redtide"
-  web: "redtide"
+  content: "jgmdev"
+  web: "jgmdev,redtide"
