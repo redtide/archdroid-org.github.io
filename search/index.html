@@ -1,0 +1,901 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Search - Archdroid</title>
+
+		<meta name="author" content="jgmdev">
+		<meta name="web-author" content="jgmdev,redtide">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Atom Feeds -->
+		<link href="/archdroid-org.github.io/atom.xml" rel="alternate" title="News" type="application/atom+xml" />
+
+				<!-- Favicon Generator Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/archdroid-org.github.io/assets/ico/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/archdroid-org.github.io/assets/ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/archdroid-org.github.io/assets/ico/favicon-16x16.png">
+		<link rel="manifest" href="/archdroid-org.github.io/assets/ico/site.webmanifest">
+		<link rel="mask-icon" href="/archdroid-org.github.io/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/archdroid-org.github.io/assets/ico/favicon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-config" content="/archdroid-org.github.io/assets/ico/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Stylesheets -->
+		<link href="/archdroid-org.github.io/assets/css/style.min.css" rel="stylesheet" media="screen">
+				<link href="/archdroid-org.github.io/assets/css/bootstrap-table.min.css" rel="stylesheet">
+
+		<!-- Font Awesome Icons -->
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/solid.js"       integrity="sha384-Mf3ap7OwO+bjTkzM1RsrothLh38uKXvMWJ2TQPXGHqZcqfeI/cyCV+sfV0IDnBDq" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/brands.js"      integrity="sha384-b2GpqFrJizV0BUEdbrITdOA5HnxnlrErt7MlEERWd6NSJ32rHeibEvyyCuA13OAS" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/fontawesome.js" integrity="sha384-EYYaHDhIRoBhd/Ir/1fPnxg9rZLk/55lKtlNT5KrIcONoCS2kjf7ZWzMoCLLACeo" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+
+	<button
+		data-localize="site_scroll_top"
+		onclick="topFunction()"
+		id="scrollButton"
+		title="Go to top"
+	>
+		Top
+	</button>
+	<a href="#content" class="sr-only">Skip to content</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a
+					id="logo-link"
+					class="navbar-brand"
+					href="/archdroid-org.github.io/"
+				>
+					<img
+						class="d-inline-block align-top"
+						src="/archdroid-org.github.io/assets/img/logo.svg"
+						height="32" alt=""
+					></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-target="#navbarContent"
+					data-toggle="collapse"
+					aria-controls="navbarContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ml-auto">
+
+						<li class="nav-item dropdown">
+							<a
+								id="navbarMenuLang"
+								class="nav-link dropdown-toggle font-weight-bold"
+								data-toggle="dropdown"
+								aria-expanded="false"
+								aria-haspopup="true"
+								href="#"
+							>
+								<img
+									width="16" height="11" style="border:0"
+									id="language-image"
+									src="/archdroid-org.github.io/assets/flags/en.png"
+								>
+							</a>
+							<div
+								id="language-menu"
+								class="dropdown-menu"
+								data-default="en"
+								aria-labelledby="navbarMenuLang"
+							>
+			
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="en"
+				href="/archdroid-org.github.io/en/"
+			>
+				<img
+					src="/archdroid-org.github.io/assets/flags/en.png"
+					width="16" height="11" style="border:0"
+				>
+				English
+			</a>
+	
+			
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="es"
+				href="/archdroid-org.github.io/es/"
+			>
+				<img
+					src="/archdroid-org.github.io/assets/flags/es.png"
+					width="16" height="11" style="border:0"
+				>
+				Español
+			</a>
+	
+			
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="it"
+				href="/archdroid-org.github.io/it/"
+			>
+				<img
+					src="/archdroid-org.github.io/assets/flags/it.png"
+					width="16" height="11" style="border:0"
+				>
+				Italiano
+			</a>
+	
+							</div>
+						</li>
+
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_packages"
+								href="/archdroid-org.github.io/packages/"
+							>
+								Packages
+							</a>
+	
+						</li>
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_mirrors"
+								href="/archdroid-org.github.io/en/mirrors/"
+							>
+								Mirrors
+							</a>
+	
+						</li>
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_images"
+								href="/archdroid-org.github.io/en/images/"
+							>
+								Images
+							</a>
+	
+						</li>
+
+	
+		
+		
+						<li class="nav-item dropdown">
+							<a
+								id="navbar_follow_us"
+								class="nav-link dropdown-toggle font-weight-bold"
+								data-localize="menu_follow_us"
+								data-toggle="dropdown"
+								aria-expanded="false"
+								aria-haspopup="true"
+								href="#"
+							>
+								Follow Us
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbar_follow_us"
+							>
+		
+			
+				
+				<a
+					class="dropdown-item font-weight-bold"
+					href="https://github.com/archdroid-org/"
+				><i
+						class="fab fa-github fa-fw"
+						aria-hidden="true"
+					></i>&nbsp;<span data-localize="menu_github">GitHub</span>
+				</a>
+			
+		
+			
+				
+				<a
+					class="dropdown-item font-weight-bold"
+					href="/archdroid-org.github.io/atom.xml"
+				><i
+						class="fas fa-rss fa-fw"
+						aria-hidden="true"
+					></i>&nbsp;<span data-localize="menu_feed">Feed</span>
+				</a>
+			
+		
+							</div>
+	
+						</li>
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_news"
+								href="/archdroid-org.github.io/news/"
+							>
+								News
+							</a>
+	
+						</li>
+
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_search"
+								href="/archdroid-org.github.io/search/"
+							>
+								Search</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+	<div class="container-fluid">
+		<div id="content">
+			<article>
+
+				<h1 data-localize="site_search">Search</h1>
+<script src="/assets/js/lunr.min.js"></script>
+
+<script>
+
+var documents = [{
+    "id": 0,
+    "url": "https://archdroid-org.github.io/it/env/xfce/",
+    "title": "Ambiente Desktop Xfce",
+    "body": "Xfce è un ambiente desktop leggero per sistemi operativi simil-UNIX. Mira ad essere veloce e con poche risorse di sistema, pur essendo visivamenteaccattivante e facile da usare. (Registro Modifiche ) Cos’è incluso?:  Bluetooth Collegamento in rete con NetworkManager cpupower preimpostato con impostazioni di lavoro note Yay e AUR helper Centro software Pamac Temi Arc per il desktop e Papirus per le icone preimpostati Associazioni preimpostate che forniscono funzionalità di affiancamento Xfce(vedi gestione tastiera / finestre nelle impostazioni di sistema).  SSH abilitato Caratteri shell TTY più larghi e leggibili Pacchetto archlinuxdroid-repo preinstallato per aggiornamenti facilitatidel kernel e dei pacchetti Realtime privileges preinstallato per applicazioni audio professionali Un piacevole sfondo: space. jpg!Screenshot: Centro Software Pamac Credenziali: Utente normale:  nome utente: alarm password: alarmAmministratore:  nome utente: root password: rootIl wizard di installazione ti permetterà di modificare le password predefiniteper una ulteriore sicurezza. Impostazioni: Utilizzando immagini recenti, una volta visualizzato il gestore degli accessi,attendere alcuni secondi, in quanto il sistema dovrà aumentare la dimensionedella partizione e preparare le impostazioni della lingua. Successivamente un wizard ti guiderà a terminare le impostazioni di sistema,quindi assicurati di aver collegato un display prima di avviare l’installazione. Associazioni della tastiera: Nota: SuperKey è anche nota come WinKey  Premere SuperKey + a per aprire il menu delle applicazioni Premere SuperKey + t per visualizzare il terminale a discesa Premere SuperKey + f per visualizzare a pieno schermole applicazioni che lo supportano Premere SuperKey + q per chiudere le applicazioniPer ulteriori associazioni fare riferimento alle impostazioni della tastieradi Xfce. "
+    }, {
+    "id": 1,
+    "url": "https://archdroid-org.github.io/it/env/gnome/",
+    "title": "Ambiente Desktop GNOME",
+    "body": "GNOME è un ambiente desktop moderno e ricco di funzionalità. (Registro Modifiche ) Cos’è incluso?:  Bluetooth Collegamento in rete con NetworkManager Yay e AUR helper Centro software Pamac Temi Arc per il desktop e Papirus per le icone preimpostati SSH abilitato Caratteri shell TTY più larghi e leggibili Pacchetto archlinuxdroid-repo preinstallato per aggiornamenti facilitatidel kernel e dei pacchetti Firefox con supporto Wayland abilitato (vedi /etc/profile. d/) Realtime privileges preinstallato per applicazioni audio professionali Un piacevole sfondo: space. jpg!Screenshot: Credenziali: Utente normale:  nome utente: alarm password: alarmAmministratore:  nome utente: root password: rootIl wizard di installazione ti permetterà di modificare le password predefiniteper una ulteriore sicurezza. Impostazioni: Utilizzando immagini recenti, una volta visualizzato il gestore degli accessi,attendere alcuni secondi, in quanto il sistema dovrà aumentare la dimensionedella partizione e preparare le impostazioni della lingua. Successivamente un wizard ti guiderà a terminare le impostazioni di sistema,quindi assicurati di aver collegato un display prima di avviare l’installazione. Problemi Noti: Il sistema si spegne automaticamenteGNOME è preimpostato per mettere in pausa il dispositivo dopo un tempo predefinitodi inattività. Per prevenire ciò, disabilitarne la funzione nelle impostazionio nel Centro di Controllo. Associazioni della tastiera: Nota: SuperKey è anche nota come WinKey  Premere SuperKey + a per aprire il menu delle applicazioni Premere SuperKey + t per visualizzare il terminale a discesa Premere SuperKey + f per visualizzare a pieno schermole applicazioni che lo supportano Premere SuperKey + q per chiudere le applicazioniPer ulteriori associazioni fare riferimento alle impostazioni della tastieradi GNOME. "
+    }, {
+    "id": 2,
+    "url": "https://archdroid-org.github.io/it/env/wayfire/",
+    "title": "Ambiente Desktop Wayfire",
+    "body": "Wayfire è un ambiente leggero basato su Wayland, paragonabile a Westonma con molte più funzionalità che lo rendono davvero tuo. Wayfire è come un Compiz per Wayland, ma è completamente indipendente. Inoltre, poiché non è esoso di risorse, funziona alla grande. (Registro Modifiche ) Cos’è incluso?:  Display manager lightdm con wayfire preimpostato come gestore di sessione Bluetooth (blueman) Collegamento in rete con NetworkManager cpupower preimpostato Yay e AUR helper Centro software Pamac Temi Arc per il desktop e Papirus per le icone preimpostati Associazioni della tastiera per Wayfire preimpostati (Premi SuperKey + cper personalizzarli).  SSH abilitato Caratteri shell TTY più larghi e leggibili Lettori video MPV e VLC Un piacevole sfondo: space. jpg!Screenshot:   Installazione: Utente normale:  nome utente: alarm password: alarmAmministratore:  nome utente: root password: rootIl wizard di installazione ti permetterà di modificare le password predefiniteper una ulteriore sicurezza. Impostazioni: Utilizzando immagini recenti, una volta visualizzato il gestore degli accessi,attendere alcuni secondi, in quanto il sistema dovrà aumentare la dimensionedella partizione e preparare le impostazioni della lingua. Successivamente un wizard ti guiderà a terminare le impostazioni di sistema,quindi assicurati di aver collegato un display prima di avviare l’installazione. Connettiti a una rete Wi-Fi utilizzando l’applet di NetworkManager nella systrayo aprendo un terminale premendo CTRL + ALT + t o digitando nmtui-connect. Associazioni della tastiera: Di seguito solo alcune principali associazioni, puoi trovarle tutte elencate nelgestore di configurazione di Wayfire, avviandolo premendo SuperKey + cdal menu delle applicazioni, o premendo SuperKey + a per avviare wofi(simile a dmenu ma per Wayland) e digitando “wcm”.  SuperKey + a - apre una applicazione con wofi SuperKey + shift + a - esegui un comando con bemenu SuperKey + c - gestore di configurazione Wayfire SuperKey + e - avvia file manager/explorer SuperKey + t - terminale a discesa Ctrl + Alt + t - terminale normale SuperKey + w - avvia Firefox SuperKey + q - termina una applicazione SuperKey + l - termina sessione, spegnimento, riavvio, ecc… con wlogout SuperKey + Numpad_# - diverse scorciatoie di posizionamento delle finestre SuperKey + ArrowKeys - sposta la finestra in aree di lavoro diverse SuperKey + Alt + ArrowKeys - sposta in aree di lavoro diverse SuperKey + f - ingrandisce la finestra a schermo intero SuperKey + shift + f - forza la scala di una finestra a schermo intero SuperKey + s - mostra le finestre aperte dell’area di lavoro corrente SuperKey + shift + s - mostra le finestre aperte in tutte le aree di lavoro SuperKey + MouseScroll - Zoom avanti o Zoom indietro SuperKey - Workspaces View"
+    }, {
+    "id": 3,
+    "url": "https://archdroid-org.github.io/it/env/headless/",
+    "title": "Ambiente Headless",
+    "body": "Immagine minimale con pacchetti sufficienti per usarla facilmenteanche da una connessione wireless. (Registro Modifiche ) Cos’è incluso?:  La maggior parte degli strumenti per configurare facilmente la rete,incluso il supporto Wi-Fi (wifi-menu, netctl).  Bluetooth Yay e AUR helper SSH abilitato Caratteri shell TTY più larghi e leggibili Pacchetto archlinuxdroid-repo preinstallato per aggiornamenti facilitatidel kernel e dei pacchetti Realtime privileges preinstallato per applicazioni audio professionaliCredenziali: Utente normale:  nome utente: alarm password: alarmAmministratore:  nome utente: root password: rootNon dimenticare di modificare le password predefinite per una ulteriore sicurezza Impostazioni: Dopo l’avvio e l’accesso, se non si dispone di un cavo di rete collegato masolamente di un dongle wifi, è possibile utilizzare il menu wifi per configurarefacilmente la connessione wireless: # Segui le istruzioni di connessione sullo schermosudo wifi-menu# Elenca le connessioni disponibilinetctl list# Abilita la connessione Wi-Fi al riavvio del sistemasudo netctl enable __connection-name-returned-by-netctl-list__"
+    }, {
+    "id": 4,
+    "url": "https://archdroid-org.github.io/it/images/odroidc4/",
+    "title": "Immagini ArchLinuxARM per Odroid C4/HC4",
+    "body": "Odroid C4 e la variante HC4 sono dei computer a singola scheda economici edi moderata potenza a 4 core, con una frequenza che arriva sino ai 2GHz. Supportano fino a 4GB di RAM, scheda ethernet integrata, porte USB2 e USB3,slot SDCard, slot EMMC e uno stack Mesa OpenGL per GPU Mali G31, rendendoliabbastanza potenti da essere impiegati come piccoli desktop computer,potenti NAS ed altro ancora. Ulteriori dettagli possono essere consultatinelle wiki per C4 e HC4 di Hardkernel. Dove acquistare:  Hardkernel AmeridroidImmagini: 										Environment										Info &amp; Download																Gnome																																							Xfce																																							Wayfire																														Caratteristiche uniche rispetto alle tarball ALARM ufficiali:  Supporto per C4 e HC4.  Kernel Linux mantenuto da @tobetter e da altre persone per il supporto audioe correzioni dei driver hdmi.  Pacchetto U-Boot con hook per aggiornare automaticamente boot. ini se il kernelviene modificato in non mainline, il che aiuta a prevenire errori di avvio.  Pacchetti mesa (mesa-devel o mesa-devel-git) con panfrost più aggiornatie migliori prestazioni grafiche. Installazione: Le istruzioni per installare una immagine su SD o EMMC sono documentate suhttps://wiki. odroid. com/troubleshooting/odroid_flashing_tools. Cosa funziona?: Alcune delle applicazioni grafiche che sono state testate. Triple A Games :D:  OpenArena - sudo pacman -S openarena Cendric - sudo pacman -S cendric-git SuperTux - sudo pacman -S supertux MineTest - sudo pacman -S minetest Chromium B. S. U - sudo pacman -S chromium-bsu Neverball - sudo pacman -S neverball teeworlds - sudo pacman -S teeworlds supertuxkart - sudo pacman -S supertuxkartVideo:  MPV con accelerazione grafica - sudo pacman -S mpv KODI con supporto OpenGL - sudo pacman -S kodi-x11Sviluppo:  CodeLite IDE per lo sviluppo con C/C++, PHP e NodeJS - sudo pacman -S codelite-git CodeBlocks per lo sviluppo con C/C++ - sudo pacman -S codeblocks-svnMiglioramento delle prestazioni del sistema: Se desideri prestazioni migliori, prova ad eseguiresudo cpupower frequency-set -g performance dal terminale. Per renderlo permanente, imposta il governatore della CPU a performance applicandole seguenti modifiche in /etc/default/cpupower: da governor='schedutil'a governor='performance'Quindi riavvia il servizio con sudo systemctl restart cpupower per renderleimmediatamente effettive. "
+    }, {
+    "id": 5,
+    "url": "https://archdroid-org.github.io/it/images/odroidn2/",
+    "title": "Immagini ArchLinuxARM per Odroid N2/N2+",
+    "body": "Odroid N2 e la variante N2+ sono dei potenti computer a singola schedaa 6 core con una frequenza che parte da 1. 8GHz fino a 2. 4GHz per la variante. Supportano fino a 4GB di RAM, scheda ethernet integrata, porte USB2 e USB3,slot SDCard, slot EMMC e uno stack Mesa OpenGL per GPU Mali G52, rendendoliabbastanza potenti da essere impiegati come desktop computer ed altro ancora. Ulteriori dettagli possono essere consultati nella wiki Hardkernel. Dove acquistare:  Hardkernel AmeridroidImmagini: 										Environment										Info &amp; Download																Headless																																							Gnome																																							Xfce																																							Wayfire																														Caratteristiche uniche rispetto alle tarball ALARM ufficiali:  Kernel Linux mantenuto da @tobetter e da altre persone per il supporto audio,correzioni dei driver hdmi, frequenza più elevata della CPU per N2+ e altroancora.  Pacchetto U-Boot con hook per aggiornare automaticamente boot. ini se il kernelviene modificato in non mainline, il che aiuta a prevenire errori di avvio.  Pacchetti mesa (mesa-devel o mesa-devel-git) con panfrost più aggiornatie migliori prestazioni grafiche su immagini non headless. Installazione: Le istruzioni per installare una immagine su SD o EMMC sono documentate suhttps://wiki. odroid. com/troubleshooting/odroid_flashing_tools. Le immagini non si avviano da petitboot a meno che non sia installato un petitbootaggiornato (la versione 20200721 o più recente sembra funzionare) e un displaycompatibile (altrimenti verrà visualizzata una schermata nera), in caso contrariosarà necessario eseguire l’avvio direttamente da EMMC o SD card. Cosa funziona?: Alcune delle applicazioni grafiche che sono state testate. Triple A Games :D:  OpenArena - sudo pacman -S openarena Cendric - sudo pacman -S cendric-git SuperTux - sudo pacman -S supertux MineTest - sudo pacman -S minetest Chromium B. S. U - sudo pacman -S chromium-bsu Neverball - sudo pacman -S neverball teeworlds - sudo pacman -S teeworlds supertuxkart - sudo pacman -S supertuxkart xonotic - sudo pacman -S xonoticVideo:  MPV con accelerazione grafica - sudo pacman -S mpv KODI con supporto OpenGL - sudo pacman -S kodi-wayland o sudo pacman -S kodi-x11Sviluppo:  CodeLite IDE per lo sviluppo con C/C++, PHP e NodeJS - sudo pacman -S codelite-git CodeBlocks per lo sviluppo con C/C++ - sudo pacman -S codeblocks-svnMiglioramento delle prestazioni del sistema: Se desideri prestazioni migliori, prova ad eseguiresudo cpupower frequency-set -g performance dal terminale. Per renderlo permanente, imposta il governatore della CPU a performance applicandole seguenti modifiche in /etc/default/cpupower: da governor='schedutil'a governor='performance'Quindi riavvia il servizio con sudo systemctl restart cpupower per renderleimmediatamente effettive. "
+    }, {
+    "id": 6,
+    "url": "https://archdroid-org.github.io/it/images/",
+    "title": "Immagini Dispositivo",
+    "body": "Questa è la lista dei dispositivi attualmente supportati da Archdroid. Se il tuo dispositivo non è in elenco, hai la possibilità di poter contribuireai progetti alarm image generator e pkgbuilds. 										Device										Images										Odroid C4/HC4							View					Odroid N2/N2+							View		"
+    }, {
+    "id": 7,
+    "url": "https://archdroid-org.github.io/it/mirrors/",
+    "title": "Mirror del Repository",
+    "body": "Nella tabella sottostante sono elencati i server che fornisconoi pacchetti per Archdroid. Puoi utilizzarli aggiungendoli al file /etc/pacman. conf, oppure installandoil pacchetto archdroid-repo. 										Name										URL										archlinuxdroid. tk			http://archlinuxdroid. tk/archlinuxdroid/$arch/					GitHub			https://github. com/archdroid-org/repo/releases/download/$arch/		"
+    }, {
+    "id": 8,
+    "url": "https://archdroid-org.github.io/it/team/",
+    "title": "Team",
+    "body": "Le persone che hanno reso possibile il progetto Archdroid: 										Name										Contributions										jgmdev			Tools, Packaging, Images					redtide			Tools, Website		"
+    }, {
+    "id": 9,
+    "url": "https://archdroid-org.github.io/it/",
+    "title": "Home",
+    "body": "    Archdroid:     Il progetto Archdroid consiste in un set di strumenti e pacchetti aggiuntivi perfornire un ulteriore supporto ai computer a scheda singola che possano esseresupportati o meno da ArchLinuxARM. Al momento sono supportati Odroid N2/N2+ e Odroid C4/HC4 con unnuovo uboot, kernel patchati da HardKernel, immagini disco pronte all’usoe un repository di software aggiuntivo per gli aggiornamenti. La situazione ideale sarebbe che le modifiche fornite da questo progetto venisserointegrate in origine (ArchLinuxARM), ma fino ad allora continueremo a fornirei pacchetti aggiuntivi e i miglioramenti.     Qualsiasi distribuzione basata su ArchLinuxARM è ben accetta per utilizzare glistrumenti e i pacchetti su cui abbiamo lavorato e per contribuire ai varirepository sulla nostra Organizzazione GitHub.     Buon divertimento!    Latest News:            				Website online			:        							by 				redtide							at 								March 03, 2021 11:34 AM			 			     	 Built on Jekyll.  Most content is authored in Markdown format.  Utilizes Bootstrap for easy skinning and responsive design,making the website available to mobile devices.  Utilizes FontAwesome and Favicon Generator for content and website icons.      					 News Archive	     Recent Updates:     				retux 1. 4. 1-2																											mesa-devel-git 21. 1. 0_. . . 																											mesa-icecream95-git 21. 1. 0_. . . 																											codelite-git 15. 0. 1. . . . 																											codeblocks-svn 20. 03. r. . . 																											mesa-devel 21. 1. 0_. . . 																											mesa-bbrezillon-git 21. 1. 0_. . . 																											linux-amlogic-512-headers 5. 12-2																											linux-amlogic-512 5. 12-2																											linux-odroid-rt-headers 5. 10. 18-2																								   "
+    }, {
+    "id": 10,
+    "url": "https://archdroid-org.github.io/search/",
+    "title": "Search",
+    "body": "{% include search. liquid %} "
+    }, {
+    "id": 11,
+    "url": "https://archdroid-org.github.io/es/env/xfce/",
+    "title": "Entorno de Escritorio XFCE",
+    "body": "Xfce es un entorno liviano de escritorio para sistemas operativos UNIX. Su meta es ser rápido y depender de pocos recursos del sistema, manteniendouna apariencia visualmente agradable y de uso fácil. (Historial de Cambios) Que está incluido?:  Atajos de teclado pre-configurados que le dan a XFCE funcionalidad “tiling”(vea Teclado/Manejo de Ventanas en las Configuraciones del Sitema) Bluetooth Manejo de redes con NetworkManager Paquete cpupower preconfigurado.  Asistente de AUR Yay.  Centro de paquetes Pamac.  Uso del tema de escritorio Arc y tema de iconos Papirus.  SSH Activado.  Mas grande y legible font de tty.  Instalado archlinuxdroid-repo para fácil actualización de kernel y otros programas.  Firefox con soporte de wayland activado. (ver /etc/profile. d/) Privilegios de tiempo real activados para el usuario alarm para pro-audio.  Un bonito fondo del espacio (space. jpg)!Algunas capturas de pantalla:: Gestor de paquetes proveido por Pamac Credenciales: Usuario Regular:  usuario: alarm contraseña: alarmAdministración:  usuario: root contraseña: rootEn su primer inicio del sistema el asistente de configuracion le permitirade manera sencilla el poder cambiar la contraseña predeterminada para mayorseguridad. Configuración: Con la imagen más reciente, antes de iniciar al manejador de inicio de sesiónespere unos segundos por que el sistema agrandara la partición de archivos yconfigurara el lenguaje, luego un asistente de configuración del sistema loguiará a completar la configuración. Asegurese de tener una pantalla conectadaantes de iniciar el sistema. Accesos de Teclado: Nota: SuperKey es tambien conocida como WinKey  Presione SuperKey + a para abrir el menu de aplicaciones.  Presione SuperKey + t para bajar la terminal.  Presione SuperKey + f para activar modo pantalla completa en las aplicaciones que lo soporten.  Presione SuperKey + q para salir/cerrar una aplicación. Para más atajos del teclado vea las configuraciones de XFCE. "
+    }, {
+    "id": 12,
+    "url": "https://archdroid-org.github.io/es/env/gnome/",
+    "title": "Entorno de Escritorio GNOME",
+    "body": "GNOME es un moderno y completo entorno de escritorio. (Historial de Cambios) Que está incluido?:  Bluetooth Manejo de redes con NetworkManager Paquete cpupower preconfigurado.  Asistente de AUR Yay.  Centro de paquetes Pamac.  Uso del tema de escritorio Arc y tema de iconos Papirus.  SSH Activado.  Mas grande y legible font de tty.  Instalado archlinuxdroid-repo para fácil actualización de kernel y otros programas.  Firefox con soporte de wayland activado. (ver /etc/profile. d/) Privilegios de tiempo real activados para el usuario alarm para pro-audio.  Un bonito fondo del espacio (space. jpg)!Algunas capturas de pantalla:: Credenciales: Usuario Regular:  usuario: alarm contraseña: alarmAdministración:  usuario: root contraseña: rootEn su primer inicio del sistema el asistente de configuracion le permitirade manera sencilla el poder cambiar la contraseña predeterminada para mayorseguridad. Configuración: Con la imagen más reciente, antes de iniciar al manejador de inicio de sesiónespere unos segundos por que el sistema agrandara la partición de archivos yconfigurara el lenguaje, luego un asistente de configuración del sistema loguiará a completar la configuración. Asegurese de tener una pantalla conectadaantes de iniciar el sistema. Problemas Conocidos: El sistema automaticamente se apagaGNOME esta configurado para dormir el dispositivo luego de un tiempo predeterminadode inactividad, para prevenir esta situación puede desactivar la funcionalidaddesde el centro de control de GNOME. Accesos de Teclado: Nota: SuperKey es tambien conocida como WinKey  Presione SuperKey + a para abrir el menu de aplicaciones.  Presione SuperKey + t para bajar la terminal.  Presione SuperKey + f para activar modo pantalla completa en las aplicaciones que lo soporten.  Presione SuperKey + q para salir/cerrar una aplicación. Para más atajos del teclado vea las configuraciones de GNOME. "
+    }, {
+    "id": 13,
+    "url": "https://archdroid-org.github.io/es/env/wayfire/",
+    "title": "Entorno de Escritorio Wayfire",
+    "body": "Wayfire es un entorno de escritorio liviano de Wayland comparable a Weston perocon suficientes funcionalidades para hacerlo tuyo. Wayfire es como un Compizpara Wayland pero completamente independiente. Además depende de muy pocosrecursos del sistema por lo que corre y funciona de maravilla. (Historial de Cambios) Que está incluido?:  Gestor de inicio Lightdm con wayfire configurado como sesión predeterminada.  Atajos de teclado preconfigurados para wayfire (Presione SuperKey + c para customizar).  Reproductores de video MPV y VLC.  Manejo de redes con NetworkManager Paquete cpupower preconfigurado.  Asistente de AUR Yay.  Centro de paquetes Pamac.  Uso del tema de escritorio Arc y tema de iconos Papirus.  SSH Activado.  Mas grande y legible font de tty.  Instalado archlinuxdroid-repo para fácil actualización de kernel y otros programas.  Firefox con soporte de wayland activado. (ver /etc/profile. d/) Privilegios de tiempo real activados para el usuario alarm para pro-audio.  Un bonito fondo del espacio (space. jpg)!Algunas capturas de pantalla::   Credenciales: Usuario Regular:  usuario: alarm contraseña: alarmAdministración:  usuario: root contraseña: rootEn su primer inicio del sistema el asistente de configuracion le permitirade manera sencilla el poder cambiar la contraseña predeterminada para mayorseguridad. Configuración: Con la imagen más reciente, antes de iniciar al manejador de inicio de sesiónespere unos segundos por que el sistema agrandara la partición de archivos yconfigurara el lenguaje, luego un asistente de configuración del sistema loguiará a completar la configuración. Asegurese de tener una pantalla conectadaantes de iniciar el sistema. Para conectarse a una red wifi utilize el applet del network manager o abrael terminal presionando CTRL + ALT + t y escriba nmtui-connect. Accesos de Teclado: Una lista de atajos de teclado puede ser vista inspeccionado elWayfire Config Manager el cual puede ejecutar con SuperKey + c, desdeel menu de aplicaciones o presionando SuperKey + a para ejecutar wofi(similar a dmenu pero para Wayland) y escribiendo wcm. Aquí una referenciaparcial de atajos de teclado.  SuperKey + a - abrir aplicación con wofi SuperKey + shift + a - ejecitar comando con bemenu SuperKey + c - wayfire config manager SuperKey + e - abrir el manejador de archivos SuperKey + t - bajar una terminal Ctrl + Alt + t - abrir ventana regular de terminal SuperKey + w - abrir firefox SuperKey + q - cerrar aplicaciones SuperKey + l - logout, shutdown, reboot, etc… con wlogout SuperKey + Numpad_# - diferentes atajos de posicionamiento de ventanas que hacen sentido SuperKey + ArrowKeys - Mover ventana a un espacio de trabajo distinto SuperKey + Alt + ArrowKeys - MOverse a otro espacio de trabajo SuperKey + f - cambiar una ventana a pantalla completa SuperKey + shift + f - forzar a escala una ventana a pantalla completa SuperKey + s - mostrar ventanas abiertas del espacio de trabajo actual SuperKey + shift + s - mostrar las ventanas abiertas de todos los espacios de trabajo SuperKey + MouseScroll - Zoom in o Zoom out SuperKey - Ver los espacios de trabajoEstos son algunos de los atajos de teclado, recuerde que puede verlos todos en elWayfire Config Manager. "
+    }, {
+    "id": 14,
+    "url": "https://archdroid-org.github.io/es/env/headless/",
+    "title": "Entorno Headless",
+    "body": "Entorno mínimo con suficientes paquetes para ser fácilmente utilizadainclusive en conexiones inalambricas. (Historial de Cambios) Que está incluido?:  La mayoría de las herramientas para configurar una red incluyendo soporte dewifi (wifi-menu, netctl).  Bluetooth Asistente de AUR Yay.  SSH Activado.  Mas grande y legible font de tty.  Instalado archlinuxdroid-repo para fácil actualización de kernel y otros programas.  Privilegios de tiempo real activados para el usuario alarm para pro-audio. Credenciales: Usuario Regular:  usuario: alarm contraseña: alarmAdministración:  usuario: root contraseña: rootEn su primer inicio del sistema el asistente de configuración le permitiráde manera sencilla el poder cambiar la contraseña predeterminada para mayorseguridad. Configuración: Luego de iniciar el sistema y hacer inicio de usuario si no tiene un cablede red y solo posee un adaptador usb de wifi, puede utilizar wifi-menu parafácilmente configurar la conexión inalambrica: # Siga las instrucciones de conexión en la pantallasudo wifi-menu# Listar conexiones disponiblesnetctl list# Activar conexión wifi en el inicio de sistemasudo netctl enable nombre-de-conexion-devolvido-por-netctl-list"
+    }, {
+    "id": 15,
+    "url": "https://archdroid-org.github.io/es/images/odroidc4/",
+    "title": "Imagenes de ArchLinuxARM para Odroid C4/HC4",
+    "body": "El Odroid C4 y la nueva variante HC4 es una económica y poderosa computadora deplaca única que tiene una CPU de 4 núcleos con velocidades que llegan a los 2Ghz. Soporta hasta 4 GB de memoria ram, tiene adapter de red integrado, PuertosUSB 3 y 2, conector para tarjeta SD y EMMC así como una GPU Mali 31 que cuentacon soporte de Mesa OpenGL, lo que la hace suficientemente capaz para usoliviano como computadora de escriorio, una poderosa NAS y mucho más. Másdetalles pueden ser vistos en la C4 hardkernel wiki o HC4 hardkernel wiki. Donde Comprar:  Hardkernel AmeridroidImagenes: {% include archdroid/images-table. liquid id=”odroidc4” %} Características adicionales del los archivos tar de ALARM:  Soporte para C4 y HC4.  Linux kernel matenido por @tobetter y otras personas con soporte de audio,arregos al controlador hdmi y otros cambios.  Paquete de U-boot con ganchos que actualizan el boot. ini automaticamente siun kernel distinto es instalado, lo que ayuda a prevenir fallos del inicio desistema.  Un paquete de mesa (mesa-devel, mesa-devel-git) mas actualizado que incluyelos cambios más recientes de panfrost para un mejor rendimiento gráfico en lasimagenes que incluyen un entorno de escritorio. Instalación: El proceso de quemar la imagen a una SD o EMMC esta documentada enhttps://wiki. odroid. com/troubleshooting/odroid_flashing_tools. Las imagenesno inician directamente desde petitboot al menos que tenga una version actualizadadel mismo (la version [20200721] o mas nueva parece funcionar) y una pantallacompatible (de otra manera solo se mostrará una pantalla negra). De no cumplircon estos requisitos necesitará iniciar directamente desde la tarjeta SD o EMMC. Que Funciona?: Algunas de las aplicaciones gráficas que han sido probadas y funcionancorrectamente. Juegos Triple A :D:  OpenArena - sudo pacman -S openarena Cendric - sudo pacman -S cendric-git SuperTux - sudo pacman -S supertux MineTest - sudo pacman -S minetest Chromium B. S. U - sudo pacman -S chromium-bsu Neverball - sudo pacman -S neverball teeworlds - sudo pacman -S teeworlds supertuxkart - sudo pacman -S supertuxkartVideo:  MPV con aceleración de video - sudo pacman -S mpv KODI con soporte de OpenGL - sudo pacman -S kodi-wayland o sudo pacman -S kodi-x11Desarrollo:  CodeLite IDE para desarrollo C/C++, PHP y NodeJS - sudo pacman -S codelite-git CodeBlocks para desarrollo C/C++ - sudo pacman -S codeblocks-svnMejorar el Rendimiento del Sistema: Si desea mejor rendimiento de su sistema puede tratar ejecutandosudo cpupower frequency-set -g performance desde la terminal. Para hacer elcambio completamente permanente puede configurar el gobernador de la CPU a modo“performance” abriendo el archivo /etc/default/cpupower y cambiaando la línea quelee de la siguiente manera: governor='schedutil'a governor='performance'Luego pudes ejecutar sudo systemctl restart cpupower para aplicar los cambiosde manera inmediata. "
+    }, {
+    "id": 16,
+    "url": "https://archdroid-org.github.io/es/images/odroidn2/",
+    "title": "Imagenes de ArchLinuxARM para Odroid N2/N2+",
+    "body": "El Odroid N2 y la nueva variante N2+ es una poderosa computadora de placaúnica que tiene una CPU de 6 núcleos con velocidades desde 1. 8Ghz a 2. 4Ghzpara la variante N2+. Soporta hasta 4 GB de memoria ram, tiene adapter dered integrado, Puertos USB 3 y 2, conector para tarjeta SD y EMMC asícomo una GPU Mali 52 que cuenta con soporte de Mesa OpenGL, lo que lahace suficientemente poderosa para reemplazar una cumputadora de escritorioy mucho más. Más detalles pueden ser vistos en la Hardkernel wiki. Donde Comprar:  Hardkernel AmeridroidImagenes: {% include archdroid/images-table. liquid id=”odroidn2” %} Características adicionales del los archivos tar de ALARM:  Linux kernel matenido por @tobetter y otras personas con soporte de audio,arregos al controlador hdmi, soporte de frecuencias más altas para la cpudel N2+ y otros cambios.  Paquete de U-boot con ganchos que actualizan el boot. ini automaticamente siun kernel distinto es instalado, lo que ayuda a prevenir fallos del inicio desistema.  Un paquete de mesa (mesa-devel, mesa-devel-git) mas actualizado que incluyelos cambios más recientes de panfrost para un mejor rendimiento gráfico en lasimagenes que incluyen un entorno de escritorio. Instalación: El proceso de quemar la imagen a una SD o EMMC esta documentada enhttps://wiki. odroid. com/troubleshooting/odroid_flashing_tools. Las imagenesno inician directamente desde petitboot al menos que tenga una version actualizadadel mismo (la version 20200721 o mas nueva parece funcionar) y una pantallacompatible (de otra manera solo se mostrará una pantalla negra). De no cumplircon estos requisitos necesitará iniciar directamente desde la tarjeta SD o EMMC. Que Funciona?: Algunas de las aplicaciones gráficas que han sido probadas y funcionancorrectamente. Juegos Triple A :D:  OpenArena - sudo pacman -S openarena Cendric - sudo pacman -S cendric-git SuperTux - sudo pacman -S supertux MineTest - sudo pacman -S minetest Chromium B. S. U - sudo pacman -S chromium-bsu Neverball - sudo pacman -S neverball teeworlds - sudo pacman -S teeworlds supertuxkart - sudo pacman -S supertuxkart xonotic - sudo pacman -S xonoticVideo:  MPV con aceleración de video - sudo pacman -S mpv KODI con soporte de OpenGL - sudo pacman -S kodi-wayland o sudo pacman -S kodi-x11Desarrollo:  CodeLite IDE para desarrollo C/C++, PHP y NodeJS - sudo pacman -S codelite-git CodeBlocks para desarrollo C/C++ - sudo pacman -S codeblocks-svnMejorar el Rendimiento del Sistema: Si desea mejor rendimiento de su sistema puede tratar ejecutandosudo cpupower frequency-set -g performance desde la terminal. Para hacer elcambio completamente permanente puede configurar el gobernador de la CPU a modo“performance” abriendo el archivo /etc/default/cpupower y cambiaando la línea quelee de la siguiente manera: governor='schedutil'a governor='performance'Luego pudes ejecutar sudo systemctl restart cpupower para aplicar los cambiosde manera inmediata. "
+    }, {
+    "id": 17,
+    "url": "https://archdroid-org.github.io/es/images/",
+    "title": "Imagenes de Dispositivos",
+    "body": "Lista de dispositivos actualmente soportados por el proyecto Archdroid. Sidesea ver su dispositivo aquí puede contribuir el soporte a los repositoriosalarm image generator y pkgbuilds. {%- include archdroid/devices. liquid -%} "
+    }, {
+    "id": 18,
+    "url": "https://archdroid-org.github.io/es/mirrors/",
+    "title": "Servidores de Repositorio",
+    "body": "La tabla a continuación lista los servidores del repositorio de paquetes. Puede utilizar estos servidores añadiendolos a tu archivo /etc/pacman. conf oinstalando el paquete [archdroid-repo]. {%- include archdroid/mirrors. liquid -%}       [archdroid-repo]: {{ ‘/packages/archlinuxdroid-repo/’   relative_url }}   "
+    }, {
+    "id": 19,
+    "url": "https://archdroid-org.github.io/es/team/",
+    "title": "Equipo",
+    "body": "Personas que hacen que el proyecto Archdroid sea possible: {%- include archdroid/team. liquid -%} "
+    }, {
+    "id": 20,
+    "url": "https://archdroid-org.github.io/es/",
+    "title": "Inicio",
+    "body": "{% include archdroid/home-top. liquid %} Acerca de {{ site. name }}: Bienvenido a Archdroid un conjunto de herramientas y paquetes adicionales paraproveer soporte extendido a computadoras de placa única que puede que seano no sean soportadas oficialmente por ArchLinuxARM. Actualmente soporteadicional es proveido para la Odroid N2/N2+ y Odroid C4/HC4mediante nuevo uboot, kernels parcheados de hardkernel, imagenes de discolistas para usar y repositorio para actualizaciones de programas. La situaciónideal sería que los cambios proveidos por este proyecto sean integrados enArchLinuxARM, pero mientras esto no ocurra seguiremos proveyendo los paquetesadiciones y mejoras. Cualquier distro basada en ArchLinuxARM es bienvenida a utilizar las herramientasy paquetes en los que hemos trabajado así como a contribuir a los variosrepositorios en nuestra Organización de GitHub. Que le sea de provecho! {% include archdroid/home-bottom. liquid %} "
+    }, {
+    "id": 21,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-exp-headers/",
+    "title": "linux-amlogic-exp-headers",
+    "body": ""
+    }, {
+    "id": 22,
+    "url": "https://archdroid-org.github.io/packages/odroid-c4-libgl-wl/",
+    "title": "odroid-c4-libgl-wl",
+    "body": ""
+    }, {
+    "id": 23,
+    "url": "https://archdroid-org.github.io/packages/waybar-git/",
+    "title": "waybar-git",
+    "body": ""
+    }, {
+    "id": 24,
+    "url": "https://archdroid-org.github.io/packages/odroid-n2-libgl-wl/",
+    "title": "odroid-n2-libgl-wl",
+    "body": ""
+    }, {
+    "id": 25,
+    "url": "https://archdroid-org.github.io/packages/wayfire-plugins-extra/",
+    "title": "wayfire-plugins-extra",
+    "body": ""
+    }, {
+    "id": 26,
+    "url": "https://archdroid-org.github.io/packages/odroid-n2-libgl-headers/",
+    "title": "odroid-n2-libgl-headers",
+    "body": ""
+    }, {
+    "id": 27,
+    "url": "https://archdroid-org.github.io/packages/mesa-devel/",
+    "title": "mesa-devel",
+    "body": ""
+    }, {
+    "id": 28,
+    "url": "https://archdroid-org.github.io/packages/xonotic-data/",
+    "title": "xonotic-data",
+    "body": ""
+    }, {
+    "id": 29,
+    "url": "https://archdroid-org.github.io/packages/trigger-rally-svn/",
+    "title": "trigger-rally-svn",
+    "body": ""
+    }, {
+    "id": 30,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-panfrost-511/",
+    "title": "linux-amlogic-panfrost-511",
+    "body": ""
+    }, {
+    "id": 31,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-c4/",
+    "title": "linux-odroid-c4",
+    "body": ""
+    }, {
+    "id": 32,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-exp/",
+    "title": "linux-odroid-exp",
+    "body": ""
+    }, {
+    "id": 33,
+    "url": "https://archdroid-org.github.io/packages/libxmp/",
+    "title": "libxmp",
+    "body": ""
+    }, {
+    "id": 34,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-panfrost-headers/",
+    "title": "linux-odroid-panfrost-headers",
+    "body": ""
+    }, {
+    "id": 35,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-rt/",
+    "title": "linux-odroid-rt",
+    "body": ""
+    }, {
+    "id": 36,
+    "url": "https://archdroid-org.github.io/packages/extremetuxracer/",
+    "title": "extremetuxracer",
+    "body": ""
+    }, {
+    "id": 37,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-exp/",
+    "title": "linux-amlogic-exp",
+    "body": ""
+    }, {
+    "id": 38,
+    "url": "https://archdroid-org.github.io/packages/cendric-git/",
+    "title": "cendric-git",
+    "body": ""
+    }, {
+    "id": 39,
+    "url": "https://archdroid-org.github.io/packages/compiz/",
+    "title": "compiz",
+    "body": ""
+    }, {
+    "id": 40,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-511/",
+    "title": "linux-odroid-511",
+    "body": ""
+    }, {
+    "id": 41,
+    "url": "https://archdroid-org.github.io/packages/retux/",
+    "title": "retux",
+    "body": ""
+    }, {
+    "id": 42,
+    "url": "https://archdroid-org.github.io/packages/odroid-alsa/",
+    "title": "odroid-alsa",
+    "body": ""
+    }, {
+    "id": 43,
+    "url": "https://archdroid-org.github.io/packages/openarena/",
+    "title": "openarena",
+    "body": ""
+    }, {
+    "id": 44,
+    "url": "https://archdroid-org.github.io/packages/kodi-tools-texturepacker/",
+    "title": "kodi-tools-texturepacker",
+    "body": ""
+    }, {
+    "id": 45,
+    "url": "https://archdroid-org.github.io/packages/dkms-8812au/",
+    "title": "dkms-8812au",
+    "body": ""
+    }, {
+    "id": 46,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-exp-headers/",
+    "title": "linux-odroid-exp-headers",
+    "body": ""
+    }, {
+    "id": 47,
+    "url": "https://archdroid-org.github.io/packages/codeblocks-svn/",
+    "title": "codeblocks-svn",
+    "body": ""
+    }, {
+    "id": 48,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-panfrost-510/",
+    "title": "linux-amlogic-panfrost-510",
+    "body": ""
+    }, {
+    "id": 49,
+    "url": "https://archdroid-org.github.io/packages/kodi-dev/",
+    "title": "kodi-dev",
+    "body": ""
+    }, {
+    "id": 50,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-g12/",
+    "title": "linux-odroid-g12",
+    "body": ""
+    }, {
+    "id": 51,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-panfrost-510-headers/",
+    "title": "linux-amlogic-panfrost-510-headers",
+    "body": ""
+    }, {
+    "id": 52,
+    "url": "https://archdroid-org.github.io/packages/codelite-git/",
+    "title": "codelite-git",
+    "body": ""
+    }, {
+    "id": 53,
+    "url": "https://archdroid-org.github.io/packages/supertuxkart/",
+    "title": "supertuxkart",
+    "body": ""
+    }, {
+    "id": 54,
+    "url": "https://archdroid-org.github.io/packages/mpv-sdl/",
+    "title": "mpv-sdl",
+    "body": ""
+    }, {
+    "id": 55,
+    "url": "https://archdroid-org.github.io/packages/kodi-x11/",
+    "title": "kodi-x11",
+    "body": ""
+    }, {
+    "id": 56,
+    "url": "https://archdroid-org.github.io/packages/dkms-mali-bifrost/",
+    "title": "dkms-mali-bifrost",
+    "body": ""
+    }, {
+    "id": 57,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-rt-headers/",
+    "title": "linux-odroid-rt-headers",
+    "body": ""
+    }, {
+    "id": 58,
+    "url": "https://archdroid-org.github.io/packages/wcm/",
+    "title": "wcm",
+    "body": ""
+    }, {
+    "id": 59,
+    "url": "https://archdroid-org.github.io/packages/wayfire/",
+    "title": "wayfire",
+    "body": ""
+    }, {
+    "id": 60,
+    "url": "https://archdroid-org.github.io/packages/wf-shell/",
+    "title": "wf-shell",
+    "body": ""
+    }, {
+    "id": 61,
+    "url": "https://archdroid-org.github.io/packages/wf-config/",
+    "title": "wf-config",
+    "body": ""
+    }, {
+    "id": 62,
+    "url": "https://archdroid-org.github.io/packages/sauerbraten-data/",
+    "title": "sauerbraten-data",
+    "body": ""
+    }, {
+    "id": 63,
+    "url": "https://archdroid-org.github.io/packages/odroid-c4-libgl-headers/",
+    "title": "odroid-c4-libgl-headers",
+    "body": ""
+    }, {
+    "id": 64,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-headers/",
+    "title": "linux-odroid-headers",
+    "body": ""
+    }, {
+    "id": 65,
+    "url": "https://archdroid-org.github.io/packages/odroid-c4-libgl-fb/",
+    "title": "odroid-c4-libgl-fb",
+    "body": ""
+    }, {
+    "id": 66,
+    "url": "https://archdroid-org.github.io/packages/wlroots-mali-git/",
+    "title": "wlroots-mali-git",
+    "body": ""
+    }, {
+    "id": 67,
+    "url": "https://archdroid-org.github.io/packages/xonotic/",
+    "title": "xonotic",
+    "body": ""
+    }, {
+    "id": 68,
+    "url": "https://archdroid-org.github.io/packages/archlinuxdroid-repo/",
+    "title": "archlinuxdroid-repo",
+    "body": ""
+    }, {
+    "id": 69,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-g12-headers/",
+    "title": "linux-odroid-g12-headers",
+    "body": ""
+    }, {
+    "id": 70,
+    "url": "https://archdroid-org.github.io/packages/kodi-gbm/",
+    "title": "kodi-gbm",
+    "body": ""
+    }, {
+    "id": 71,
+    "url": "https://archdroid-org.github.io/packages/sauerbraten/",
+    "title": "sauerbraten",
+    "body": ""
+    }, {
+    "id": 72,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-511-headers/",
+    "title": "linux-odroid-511-headers",
+    "body": ""
+    }, {
+    "id": 73,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-panfrost/",
+    "title": "linux-odroid-panfrost",
+    "body": ""
+    }, {
+    "id": 74,
+    "url": "https://archdroid-org.github.io/packages/mesa-bbrezillon-git/",
+    "title": "mesa-bbrezillon-git",
+    "body": ""
+    }, {
+    "id": 75,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-511-headers/",
+    "title": "linux-amlogic-511-headers",
+    "body": ""
+    }, {
+    "id": 76,
+    "url": "https://archdroid-org.github.io/packages/mesa-devel-git/",
+    "title": "mesa-devel-git",
+    "body": ""
+    }, {
+    "id": 77,
+    "url": "https://archdroid-org.github.io/packages/neverball/",
+    "title": "neverball",
+    "body": ""
+    }, {
+    "id": 78,
+    "url": "https://archdroid-org.github.io/packages/odroid-gl4es/",
+    "title": "odroid-gl4es",
+    "body": ""
+    }, {
+    "id": 79,
+    "url": "https://archdroid-org.github.io/packages/uboot-odroid-c4/",
+    "title": "uboot-odroid-c4",
+    "body": ""
+    }, {
+    "id": 80,
+    "url": "https://archdroid-org.github.io/packages/kodi-common/",
+    "title": "kodi-common",
+    "body": ""
+    }, {
+    "id": 81,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-512-headers/",
+    "title": "linux-amlogic-512-headers",
+    "body": ""
+    }, {
+    "id": 82,
+    "url": "https://archdroid-org.github.io/packages/kodi-wayland/",
+    "title": "kodi-wayland",
+    "body": ""
+    }, {
+    "id": 83,
+    "url": "https://archdroid-org.github.io/packages/kodi-addon-inputstream-adaptive/",
+    "title": "kodi-addon-inputstream-adaptive",
+    "body": ""
+    }, {
+    "id": 84,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-512/",
+    "title": "linux-amlogic-512",
+    "body": ""
+    }, {
+    "id": 85,
+    "url": "https://archdroid-org.github.io/packages/odroid-n2-libgl-fb/",
+    "title": "odroid-n2-libgl-fb",
+    "body": ""
+    }, {
+    "id": 86,
+    "url": "https://archdroid-org.github.io/packages/dkms-mali-bifrost-next/",
+    "title": "dkms-mali-bifrost-next",
+    "body": ""
+    }, {
+    "id": 87,
+    "url": "https://archdroid-org.github.io/packages/mesa-icecream95-git/",
+    "title": "mesa-icecream95-git",
+    "body": ""
+    }, {
+    "id": 88,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid/",
+    "title": "linux-odroid",
+    "body": ""
+    }, {
+    "id": 89,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-511/",
+    "title": "linux-amlogic-511",
+    "body": ""
+    }, {
+    "id": 90,
+    "url": "https://archdroid-org.github.io/packages/glmark2-git/",
+    "title": "glmark2-git",
+    "body": ""
+    }, {
+    "id": 91,
+    "url": "https://archdroid-org.github.io/packages/uboot-odroid-n2plus/",
+    "title": "uboot-odroid-n2plus",
+    "body": ""
+    }, {
+    "id": 92,
+    "url": "https://archdroid-org.github.io/packages/kodi-eventclients/",
+    "title": "kodi-eventclients",
+    "body": ""
+    }, {
+    "id": 93,
+    "url": "https://archdroid-org.github.io/packages/teeworlds/",
+    "title": "teeworlds",
+    "body": ""
+    }, {
+    "id": 94,
+    "url": "https://archdroid-org.github.io/packages/linux-odroid-c4-headers/",
+    "title": "linux-odroid-c4-headers",
+    "body": ""
+    }, {
+    "id": 95,
+    "url": "https://archdroid-org.github.io/packages/linux-amlogic-panfrost-511-headers/",
+    "title": "linux-amlogic-panfrost-511-headers",
+    "body": ""
+    }, {
+    "id": 96,
+    "url": "https://archdroid-org.github.io/packages/",
+    "title": "Packages",
+    "body": "{%- include archdroid/packages. liquid -%} "
+    }, {
+    "id": 97,
+    "url": "https://archdroid-org.github.io/en/env/xfce/",
+    "title": "XFCE Desktop Environment",
+    "body": "Xfce is a lightweight desktop environment for UNIX-like operating systems. It aims to be fast and low on system resources, while stillbeing visually appealing and user friendly. (Changes Log) What is Included?:  Bluetooth Networking with NetworkManager Pre-configured cpupower with known working settings.  Yay AUR helper.  Pamac software center.  Use of Arc desktop theme and Papirus icon theme by default.  Pre-configured bindings that give XFCE tiling functionality(see Keyboard/Window Manager on System Settings).  SSH Enabled.  Bigger and more readable tty font.  Installed archlinuxdroid-repo for easier kernel and custom package upgrades.  Realtime privileges enabled for alarm user for pro-audio.  A nice space. jpg wallpaper!Here are some basic screenshots:: Software Center provided by Pamac Credentials: Regular user:  username: alarm password: alarmAdministration:  username: root password: rootThe first boot setup wizard will let you easily change the default passwordsfor added security. Setup: With latest image, after booting to the login manager wait some seconds becausethe system will grow the partition and setup locales, then a setup wizard willguide you to finish system setup, so make sure to have a display connectedwhen booting the image. Keyboard Bindings: Note: SuperKey is also known as WinKey  Press SuperKey + a to open the applications menu.  Press SuperKey + t to drop down the terminal Press SuperKey + f to go into fullscreen for applications that support it Press SuperKey + q to quit/close an applicationFor more bindings check the xfce settings. "
+    }, {
+    "id": 98,
+    "url": "https://archdroid-org.github.io/en/env/gnome/",
+    "title": "GNOME Desktop Environment",
+    "body": "GNOME is a modern and featureful desktop environment. (Changes Log) What is Included?:  Bluetooth Networking with NetworkManager Yay AUR helper.  Pamac software center.  Use of Arc desktop theme and Papirus icon theme by default.  SSH Enabled.  Bigger and more readable tty font.  Installed archlinuxdroid-repo for easier kernel and custom package upgrades.  Firefox with wayland support enabled. (see /etc/profile. d/) Realtime privileges enabled for alarm user for pro-audio.  A nice space. jpg wallpaper!Here are some basic screenshots:: Credentials: Regular user:  username: alarm password: alarmAdministration:  username: root password: rootThe first boot setup wizard will let you easily change the default passwordsfor added security. Setup: With latest image, after booting to the login manager wait some seconds becausethe system will grow the partition and setup locales, then a setup wizard willguide you to finish system setup, so make sure to have a display connectedwhen booting the image. Known Issues: The system automatically turns offGNOME is set to sleep the device after a predefined amount of inactivity, toprevent this disable the feature from the gnome control center / settings. Keyboard Bindings: Note: SuperKey is also known as WinKey  Press SuperKey + a to open the applications menu.  Press SuperKey + t to drop down the terminal Press SuperKey + f to go into fullscreen for applications that support it Press SuperKey + q to quit/close an applicationFor more bindings check the gnome settings. "
+    }, {
+    "id": 99,
+    "url": "https://archdroid-org.github.io/en/env/wayfire/",
+    "title": "Wayfire Desktop Environment",
+    "body": "Wayfire is a lightweight Wayland desktop environmentcomparable to Weston but with much more features that actually make it yours,Wayfire is like the Compiz for Wayland but completely stand alone. Also sinceit is lite in resources it runs lovely. (Changes Log) What is Included?:  Lightdm display manager with wayfire set as the default session.  Bluetooth (blueman) Networking with NetworkManager Pre-configured cpupower.  Yay AUR helper.  Pamac software center.  Use of Arc desktop theme and Papirus icon theme by default.  Preconfigured Wayfire bindings (Press SuperKey + c to customize).  SSH Enabled.  Bigger and more readable tty font.  MPV and VLC video players.  A nice space. jpg wallpaper!Here are some basic screenshots::   Installation: Regular user:  username: alarm password: alarmAdministration:  username: root password: rootThe first boot setup wizard will let you easily change the default passwordsfor added security. Setup: With latest image, after booting to the login manager wait some seconds becausethe system will grow the partition and setup locales, then a setup wizard willguide you to finish system setup, so make sure to have a display connectedwhen booting the image. Connect to a wifi network using the network manager tray applet or by openinga terminal with CTRL + ALT + t and typing nmtui-connect. Keyboard Bindings: A list of keyboard bindings can be seen by inspecting theWayfire Config Manager which you can launch with SuperKey + c, from theapplications menu or by pressing SuperKey + a to launch wofi (similar todmenu but for Wayland) and typing wcm. Here is a partial bindings reference:  SuperKey + a - open application with wofi SuperKey + shift + a - execute command with bemenu SuperKey + c - wayfire config manager SuperKey + e - launch file manager/explorer SuperKey + t - drop down terminal Ctrl + Alt + t - launch regular terminal SuperKey + w - launch firefox SuperKey + q - close an open application SuperKey + l - logout, shutdown, reboot, etc… with wlogout SuperKey + Numpad_# - different window positioning shortcuts that make sense SuperKey + ArrowKeys - Move window to different workspaces SuperKey + Alt + ArrowKeys - Move to different workspaces SuperKey + f - make window fullscreen SuperKey + shift + f - force scale a window into fullscreen SuperKey + s - show open windows of current workspace SuperKey + shift + s - show open windows on all workspace SuperKey + MouseScroll - Zoom in or Zoom out SuperKey - Workspaces ViewThese are some of the bindings, you can see them all on the Wayfire Config Manager. "
+    }, {
+    "id": 100,
+    "url": "https://archdroid-org.github.io/en/env/headless/",
+    "title": "Headless Environment",
+    "body": "Minimal image with enough packages to easily use it even from a wirelessconnection. (Changes Log) What is Included?:  Most tools to easily configure network including wifi support (wifi-menu, netctl).  Bluetooth Yay AUR helper.  SSH Enabled.  Bigger and more readable tty font.  Installed archlinuxdroid-repo for easier kernel and custom package upgrades.  Realtime privileges enabled for alarm user for pro-audio. Credentials: Regular user:  username: alarm password: alarmAdministration:  username: root password: rootDon’t forget to change the default password for added security. Setup: After bootup and login if you don’t have a network cable connected and onlya wifi dongle, you can use wifi-menu to easily setup the wireless connection: # Follow the connection instructions on screensudo wifi-menu# List available connectionsnetctl list# Enable wifi connection on system rebootsudo netctl enable connection-name-returned-by-netctl-list"
+    }, {
+    "id": 101,
+    "url": "https://archdroid-org.github.io/en/images/odroidc4/",
+    "title": "Odroid C4/HC4 ArchLinuxARM Images",
+    "body": "The Odroid C4 and HC4 newer variant is a inexpensive and powerful enoughsingle board computer that has 4 cores clocking up to 2Ghz. It supportsup to 4GB of ram, has integreted ethernet, USB 3 and USB 2 ports, SDCard slot,EMMC slot and a Mesa OpenGL stack supported Mali G31 gpu, making it capableenough for lightweight desktop usage, as a powerful NAS and more. More detailscan be seen on the C4 Hardkernel wiki or the HC4 Hardkernel wiki. Where to buy:  Hardkernel AmeridroidImages: {% include archdroid/images-table. liquid id=”odroidc4” %} Distinct features from regular ALARM tarballs:  Support for C4 and HC4.  Linux kernel maintained by @tobetter and other people with audio support,hdmi driver fixes.  U-Boot package with hooks to update boot. ini automatically if kernel ischanged to non mainline which helps prevent bootup failures.  More up to date mesa-devel package with more recent panfrost work for bettergraphics performance. Installation: The process of burning the image into a SD or EMMC is documented inhttps://wiki. odroid. com/troubleshooting/odroid_flashing_tools. What Works?: Some of the graphic applications that have been tested. Triple A Games :D:  OpenArena - sudo pacman -S openarena Cendric - sudo pacman -S cendric-git SuperTux - sudo pacman -S supertux MineTest - sudo pacman -S minetest Chromium B. S. U - sudo pacman -S chromium-bsu Neverball - sudo pacman -S neverball teeworlds - sudo pacman -S teeworlds supertuxkart - sudo pacman -S supertuxkartVideo:  MPV with video acceleration - sudo pacman -S mpv KODI with opengl support - sudo pacman -S kodi-x11Development:  CodeLite IDE for C/C++, PHP, NodeJS development - sudo pacman -S codelite-git CodeBlocks for C/C++ development - sudo pacman -S codeblocks-svnImproving System Performance: If you want better performance try running sudo cpupower frequency-set -gperformance from the terminal, and to permanently set the CPU governor toperformance open /etc/default/cpupower and change the line that reads: governor='schedutil'to governor='performance'Then you can just run sudo systemctl restart cpupower to apply the changesimmediately. "
+    }, {
+    "id": 102,
+    "url": "https://archdroid-org.github.io/en/images/odroidn2/",
+    "title": "Odroid N2/N2+ ArchLinuxARM Images",
+    "body": "The Odroid N2 and N2+ newer variant is a powerful single board computer thathas 6 cores clocking from 1. 8Ghz up to 2. 4Ghz for the N2+ variant. It supportsup to 4GB of ram, has integreted ethernet, USB 3 and USB 2 ports, SDCard slot,EMMC slot and a Mesa OpenGL stack supported Mali G52 gpu, making it powerfulenough for usage as a desktop computer replacement and much more. More detailscan be seen on the Hardkernel wiki. Where to buy:  Hardkernel AmeridroidImages: {% include archdroid/images-table. liquid id=”odroidn2” %} Distinct features from regular ALARM tarballs:  Linux kernel maintained by @tobetter and other people with audio support,hdmi driver fixes, higher cpu frequency support forthe N2+ and other changes.  U-Boot package with hooks to update boot. ini automatically if kernel ischanged to non mainline which helps prevent bootup failures.  More up to date mesa package (mesa-devel or mesa-devel-git) that includesthe latest panfrost work for better graphics performance on non headless images. Installation: The process of burning the image into a SD or EMMC is documented inhttps://wiki. odroid. com/troubleshooting/odroid_flashing_tools. The images do not boot from petitboot unless you have an updated petitbootinstalled (20200721 release or newer seems to work) and compatible display(otherwise you will get a blank screen), if not you will need to boot directlyfrom emmc or sdcard. What Works?: Some of the graphic applications that have been tested and work nicely. Triple A Games :D:  OpenArena - sudo pacman -S openarena Cendric - sudo pacman -S cendric-git SuperTux - sudo pacman -S supertux MineTest - sudo pacman -S minetest Chromium B. S. U - sudo pacman -S chromium-bsu Neverball - sudo pacman -S neverball teeworlds - sudo pacman -S teeworlds supertuxkart - sudo pacman -S supertuxkart xonotic - sudo pacman -S xonoticVideo:  MPV with video acceleration - sudo pacman -S mpv KODI with opengl support - sudo pacman -S kodi-wayland or sudo pacman -S kodi-x11Development:  CodeLite IDE for C/C++, PHP, NodeJS development - sudo pacman -S codelite-git CodeBlocks for C/C++ development - sudo pacman -S codeblocks-svnImproving System Performance: If you want better performance try runningsudo cpupower frequency-set -g performance from the terminal,and to permanently set the CPU governor to performance open/etc/default/cpupower and change the line that reads: governor='schedutil'to governor='performance'Then you can just run sudo systemctl restart cpupower to apply the changesimmediately. "
+    }, {
+    "id": 103,
+    "url": "https://archdroid-org.github.io/en/images/",
+    "title": "Device Images",
+    "body": "List of devices currently supported by the Archdroid project. If you wish tosee your device here you can contribute to the project alarm image generatorand pkgbuilds repositories. {%- include archdroid/devices. liquid -%} "
+    }, {
+    "id": 104,
+    "url": "https://archdroid-org.github.io/en/mirrors/",
+    "title": "Repository Mirrors",
+    "body": "The table below list the servers that host the archdroid package repositories. You can use these mirrors by adding them to your /etc/pacman. conf file or byinstalling the [archdroid-repo] package. {%- include archdroid/mirrors. liquid -%}       [archdroid-repo]: {{ ‘/packages/archlinuxdroid-repo/’   relative_url }}   "
+    }, {
+    "id": 105,
+    "url": "https://archdroid-org.github.io/en/team/",
+    "title": "Team",
+    "body": "People that make the Archdroid project possible: {%- include archdroid/team. liquid -%} "
+    }, {
+    "id": 106,
+    "url": "https://archdroid-org.github.io/en/",
+    "title": "Home",
+    "body": "{% include archdroid/home-top. liquid %} About {{ site. name }}: Welcome to Archdroid a set of tools and additional packages to provide extendedsupport for single board computers that may or may not be supported byArchLinuxARM. Currently additional support is provided for the Odroid N2/N2+ andOdroid C4/HC4 in the form of newer uboot, patched kernels from hardkernel,ready to use disk images and additional software repository for updates. The ideal situation would be for the changes provided by this project to getmerged upstream (ArchLinuxARM), but until then we will keep providing theadditional packages and improvements. Any ArchLinuxARM based distro is welcome to use the tools and packages we haveworked on and to contribute to the various repositories on our GitHub Organization. Enjoy! {% include archdroid/home-bottom. liquid %} "
+    }, {
+    "id": 107,
+    "url": "https://archdroid-org.github.io/changes/env/",
+    "title": "Environments Changes Log",
+    "body": "The different available image environments changes log. GNOME: Date - 30/12/2020  A more lite-weight gnome install by using just the minimal amount of packagesrequired to get gnome running.  Swapped nautilus with thunar to reduce the amount of required dependencies.  Disabled suspend on gnome by default to prevent issues for users without aphysical power button.  Disabled search services on gnome for better performance.  Changed default color theme of gnome-terminal to more readable one.  Added CTRL + ALT + T keyboard shortcut to launch the terminal.  Improved initial setup script to not require a system reboot, so the systemdoesn’t reboots anymore after reaching login manager.  Updated pamac package which now includes hooks to fix appstream xml files.  Enabled the dhcpcd systemd service. Date - 05/08/2020  Blacklisted hid_logitech_hidpp which caused keyboard input to not work onGnome for wireless logitech keyboards like the K400, K360, etc… Added MOZ_ENABLE_WAYLAND=1 environment variable to enable wayland on firefoxby default. Headless: Date - 30/12/2020  First releaseXFCE: Date - 29/12/2020  Updated XFCE from 4. 14 to 4. 16 Customized colors on newer CPU Graph XFCE plugin.  Added default location to XFCE Weather plugin (can be changed by rightclick -&gt; properties) Activated Arc-Dark theme globally and for window decorations.  Replaced gcolor3 that broke support for X11 when non-GNOME with gcolor2which works properly.  Added custom gcolor2. desktop to use more modern icon(~/. local/share/applications/gcolor2. desktop) Enabled the dhcpcd systemd service.  Disabled compositing on XFCE for better OpenGL performance, also disabledtransparency on whisker menu and bottom dock like panel. Date - 27/07/2020  Added latest pamac-aur, xfce4-places-plugin, xfce4-docklike-plugin-git.  Added realtime privileges to alarm user for pro-audio. Wayfire: Date - 24/02/2021  Reverted from pipewire to pulseaudio because of issues with newest pipewireand some built-in audio drivers when starting the system up. Date - 09/02/2021  Added first boot setup wizard that guides you thru setting timezone, locale,hostname, passwords, keyboard, etc… Updated to latest wayfire 0. 7which includes performance improvements and new protocol additions.  Added waybar as top panel with trayicons support and some other customization’s.  Case insensitive search on wofi app launcher.  Enabled network manager connection applet thanks to waybar.  Removed gnome-control-center Switched from gdm to lightdm Dropped weston and gtk-shell.  Moved wf-panel to bottom, enabled window-list,patched wf-panelto show missing icons.  Added osmo calendar and task management application when clicking the upper clock/date.  Styled wlogout to match system theme and dropped lock, suspend and hibernate buttons.  Added 8 seconds timeout to mako notifications.  Swapped pulseaudio, alsa and jack with new all in one solutionPipeWire.  Added mugshot for simple user profile configuration. Date - 05/01/2021  Increased xfce4 dropdown terminal width to centralize better on the screen.  Added wl-color-picker(use Super + shift + p to launch color picker) Replaced wayland-logout with wlogout for the app menu logout button whichoffers an interface to reboot, poweroff and logout.  Added pamac-tray to wayfire startup so pamac-manager can detect packagesthat need to upgrade properly Enabled scale (Super + s or Super + shift + s) and workspace-names plugins.  Added binding (Super + d) for wdisplays (wdisplays may have rendering bugs on panfrost).  Styled the wofi launcher enabling app icons, 2 columns and more padding from icon to app title.  Styled mako desktop notifications to better match the desktop theme. Date -31/12/2020  Updated wayfire to 0. 6. 0 Swapped lxterminal with xfce4-terminal when pressing CTRL + ALT + t .  Swapped connman to NetworkManager.  Swapped greetd with gdm.  Fixed applications not launching from menu because of missing dbus-session.  Super + a now launches wofi and Super + shift + a bemenuDate - 03/08/2020  Replaced guake with xfce4-terminal for better drop-down terminal support.  Added wf-dock to startup to enable wayfire bottom app panel.  Set virtual workspace size to 3x3.  Added space wallpaper as a skydome texture for the wayfire cube plugin.  Enable Super+f for fullscreen and Shift+Super+f for alternative forced fullscreen.  Added latest pamac-aur, yay, wlroots-git, wayfire-git, etc…"
+    }, {
+    "id": 108,
+    "url": "https://archdroid-org.github.io/changes/images/odroidc4/",
+    "title": "Odroid C4/HC4 Images Changes Log",
+    "body": "Changes Log for the various disk images of this device. GNOME: Date - 30/12/2020  Improved initial setup script to not require a system reboot, so the systemdoesn’t reboots anymore after reaching login manager.  Recent build of mesa-arm-git which seems to have fixed some rendering issueson supertuxkart and have better performance.  Default /boot/boot. ini now has the bootlabel set to “ArchLinux GNOME Lite”by the image generator.  Latest software updates. Date - 21/12/2020  Switch to panfrost mesa driver from mali binary drivers.  Use 5. 10 kernel with panfrost patches from tobetter linux branch in order toalso properly support the hc4.  Includes recently build mesa from git with panfrost support and automatedbuilds are automatically fetched from the pamac update manager.  Added hc4 enabled uboot-odroid-c4 package.  Use uuid on /boot/boot. ini and /etc/fstab instead of devices names to preventpossible boot issues.  Latest software updates. Date - 23/10/2020  First releaseXFCE: Date - 29/12/2020  Improved initial setup script to not require a system reboot, so the systemdoesn’t reboots anymore after reaching login manager. Date - 29/12/2020  Updated kernel to 5. 10. 2 Fixed initial setup script to properly resize root partition on first boot.  Included recent build of mesa-arm-git which seems to have fixed somerendering issues on supertuxkart and have better performance.  Default /boot/boot. ini now has the bootlabel set to “ArchLinux XFCE” by theimage generator. Date - 21/12/2020  Switched to panfrost mesa driver from mali binary driver.  Use 5. 10 kernel with panfrost patches from tobetter linux branch in orderto also properly support the hc4.  Includes recently build mesa from git with panfrost support and automatedbuilds are automatically fetched from the pamac update manager.  Added hc4 enabled uboot-odroid-c4 package.  Use uuid on /boot/boot. ini and /etc/fstab instead of devices names toprevent possible boot issues. Date - 23/10/2020  Changed kernel name from linux-odroid-c4 to linux-odroid-g12 in an effortto unify kernel builds for N2 and C4, Improved uboot-odroid-c4 to generate proper boot. ini if changingfrom 4. 9 kernel to 5. x.  Added newer odroid-c4-libgl-fb package that can coexist withodroid-c4-libgl-wl package. Also both packages include a helper script(odroid-mali-wl, odroid-mali-fb) to run applications with that specificlibMali version. Run odroid-mali-wl or odroid-mali-fb for usage instructions.  Updated odroid-gl4es package that includes tool that can be used toenable/disable it as to run applications with gl4es even if disabled,for usage run odroid-gl4es.  Latest software updates. Date - 24/08/2020  Updated kernel to 4. 9. 230 kernel which has updated wifi module driver.  Set kernel timer frequency to 1000hz.  Enabled Automatic process group scheduling Disabled NSA SELinux Disabled integrity subsystem Added odroid-alsa package.  Added automatic resizing of system partition, generation of locales andsetup of /etc/fstab Fixed booting from emmc module when sdcard is not present by properlysetting up /etc/fstab Updated odroid-gl4es and added shell script to easily disable/enable it(run odroid-gl4es for usage info).  Added realtime privileges to alarm user for pro-audio. Date - 20/05/2020  First releaseWayfire: Date - 05/01/2021  Added updated mesa-arm-git package.  Dropped libva-mesa-driver (now included with mesa-arm-git). Date - 31/12/2020  Added support for HC4 Includes kernel 5. 10. 2 with chewitt panfrost patches and tobetter patches.  Switched from mali drivers to mesa+panfrost.  Improved initial setup script to not require a system reboot, so the systemdoesn’t reboots anymore after reaching login manager.  Default /boot/boot. ini now has the bootlabel set to “ArchLinux Wayfire” bythe image generator.  Use uuid on /boot/boot. ini and /etc/fstab instead of devices names to preventpossible boot issues. Date - 03/06/2020  First release"
+    }, {
+    "id": 109,
+    "url": "https://archdroid-org.github.io/changes/images/odroidn2/",
+    "title": "Odroid N2/N2+ Images Changes Log",
+    "body": "Changes Log for the various disk images of this device. GNOME: Date - 30/12/2020  Improved initial setup script to not require a system reboot, so the systemdoesn’t reboots anymore after reaching login manager.  Includes kernel 5. 10. 2 with chewitt panfrost patches and tobetter patches.  Recent build of mesa-arm-git which seems to have fixed some rendering issueson supertuxkart and have better performance.  Default /boot/boot. ini now has the bootlabel set to “ArchLinux GNOME Lite”by the image generator.  Use uuid on /boot/boot. ini and /etc/fstab instead of devices names to preventpossible boot issues.  Latest software updates. Date - 23/10/2020  Updated kernel from 5. 7 to 5. 8 Enabled audio support.  Added repository for easy software updates.  Improved uboot-odroid-n2plus to generate proper boot. ini if changing from5. x kernel to 4. 9.  Latest software updates. Date - 05/08/2020  First releaseHeadless: Date - 30/12/2020  First releaseXFCE: Date - 29/12/2020  Switched to panfrost mesa driver from mali binary driver.  Improved initial setup script to not require a system reboot, so thesystem doesn’t reboots anymore after reaching login manager.  Includes kernel 5. 10. 2 with chewitt panfrost patches and tobetter patches.  Recent build of mesa-arm-git which seems to have fixed some renderingissues on supertuxkart and have better performance.  Default /boot/boot. ini now has the bootlabel set to “ArchLinux XFCE” bythe image generator.  Use uuid on /boot/boot. ini and /etc/fstab instead of devices names toprevent possible boot issues.  Latest software updates. Date - 23/10/2020  Changed kernel name from linux-odroid-n2plus to linux-odroid-g12 in an effortto unify kernel builds for N2 and C4, Improved uboot-odroid-n2plus to generate proper boot. ini if changing from4. 9 kernel to 5. x.  Added newer odroid-n2-libgl-fb package that can coexist withodroid-n2-libgl-wl package. Also both packages include a helper script(odroid-mali-wl, odroid-mali-fb) to run applications with that specificlibMali version. Run odroid-mali-wl or odroid-mali-fb for usage instructions.  Updated odroid-gl4es package that includes tool that can be used toenable/disable it as to run applications with gl4es even if disabled,for usage run odroid-gl4es.  Dropped mainline kernel xfce image since that kernel can be installed fromthe repo.  Latest software updates. Date - 20/08/2020  Added image with latest 4. 9. 230 kernel which has new overlay to alwayshave fan running on N2+, and has updated wifi module driver.  Added odroid-alsa package to the 4. 9. 230 image. Date - 05/08/2020  Added automatic resizing of system partition, generation of locales andsetup of /etc/fstab Fixed booting from emmc module when sdcard is not present by properlysetting up /etc/fstab Swapped kernel 4. 9. 10 with 5. 7. 10 for better rendering performance. Date - 27/07/2020  Swapped mainline kernel with hardkernel 4. 9. 230 g12 branch.  Updated uboot to latest automatic travis build provided by hardkernel.  Enabled kernel 4. 9. 230 modules as in official ubuntu image.  Removed dkms-mali-bifrost since that driver is already built into kernel.  Removed dkms-8812au driver which is also built into kernel.  Modified odroid-n2-libgl-fb to not require dkms-mali-bifrost.  Added latest GL4ES from git. Date - 19/05/2020  First releaseWayfire: Date - 24/02/2021  Updated kernel to 5. 11. 0 with patch for 1Ghz colckrate for gpu Updated uboot and boot. ini file to support forcing an edid bin file for problematic displays that don’t properly boot with petitboot.  Overall package updates. Date - 09/02/2021  Updated kernel package to 5. 11 rc6 (linux-odroid-511) Set cpupower governor to performance by default.  Added panfrost-performance systemd service that sets gpu governor to performance at startup.  Includes latest mesa-arm-git package with new bifrost scheduler by panfrost developers.  Overall software updates. Date -31/12/2020  Includes kernel 5. 10. 2 with chewitt panfrost patches and tobetter patches.  Switched from mali drivers to mesa+panfrost.  Default /boot/boot. ini now has the bootlabel set to “ArchLinux Wayfire” by the image generator.  Use uuid on /boot/boot. ini and /etc/fstab instead of devices names to prevent possible boot issues.  Latest software updates. Date - 05/08/2020  Added automatic resizing of system partition, generation of locales and setup of /etc/fstab Fixed booting from emmc module when sdcard is not present by properly setting up /etc/fstabDate - 03/08/2020  Swapped archlinux linux-aarch64 kernel with tobetter fork (5. 7. 10) which has support for n2+.  Updated uboot to latest automatic travis build provided by hardkernel. Date - 27/05/2020  First release"
+    }, {
+    "id": 110,
+    "url": "https://archdroid-org.github.io/news/archive/",
+    "title": "News Archive",
+    "body": "{% include post-archive. liquid %} "
+    }, {
+    "id": 111,
+    "url": "https://archdroid-org.github.io/news/",
+    "title": "News",
+    "body": "{% include post. liquid %} "
+    }, {
+    "id": 112,
+    "url": "https://archdroid-org.github.io/",
+    "title": "Home",
+    "body": "{% include archdroid/home-top. liquid %} About {{ site. name }}: Welcome to Archdroid a set of tools and additional packages to provide extendedsupport for single board computers that may or may not be supported byArchLinuxARM. Currently additional support is provided for the Odroid N2/N2+ andOdroid C4/HC4 in the form of newer uboot, patched kernels from hardkernel,ready to use disk images and additional software repository for updates. The ideal situation would be for the changes provided by this project to getmerged upstream (ArchLinuxARM), but until then we will keep providing theadditional packages and improvements. Any ArchLinuxARM based distro is welcome to use the tools and packages we haveworked on and to contribute to the various repositories on our GitHub Organization. Enjoy! {% include archdroid/home-bottom. liquid %} "
+    }, {
+    "id": 113,
+    "url": "https://archdroid-org.github.io/news/2021/03/03/en-website-online.html",
+    "title": "Home",
+    "body": "2021/03/03 -  Built on Jekyll.  Most content is authored in Markdown format.  Utilizes Bootstrap for easy skinning and responsive design,making the website available to mobile devices.  Utilizes FontAwesome and Favicon Generator for content and website icons. "
+    }];
+
+var idx = lunr(function () {
+    this.ref('id')
+    this.field('title')
+    this.field('body')
+
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+function lunr_search(term) {
+    document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
+    if(term) {
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+        //put results on the screen.
+        var results = idx.search(term);
+        if(results.length>0){
+            //console.log(idx.search(term));
+            //if results
+            for (var i = 0; i < results.length; i++) {
+                // more statements
+                var ref = results[i]['ref'];
+                var url = documents[ref]['url'];
+                var title = documents[ref]['title'];
+                var body = documents[ref]['body'].substring(0,160)+'...';
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+            }
+        } else {
+            document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
+        }
+    }
+    return false;
+}
+</script>
+
+<style>
+  #lunrsearchresults {padding-top: 0.2rem;}
+  .lunrsearchresult {padding-bottom: 1rem;}
+  .lunrsearchresult .title {color: #337ab7;}
+  .lunrsearchresult .url {color: #222;}
+  .lunrsearchresult a {display: block; color: #777;}
+  .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+  .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+<form onsubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" />
+</form>
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+
+			</article>
+		</div>
+			<hr>
+			<footer>
+				<p style="text-align:left;">
+					<span data-localize="footer_copyright">Copyright</span>
+						&copy; 2021
+					<a data-localize="footer_team" href="/archdroid-org.github.io/team">
+						Archdroid Team</a>
+				</p>
+			</footer>
+
+	</div>
+		<script src="/archdroid-org.github.io/assets/js/scripts.min.js"></script>		<script type="text/javascript" src="/archdroid-org.github.io/assets/js/bootstrap-table.min.js"></script>
+		<script type="text/javascript" src="/archdroid-org.github.io/assets/js/jquery.localize.js"></script>
+		<script type="text/javascript" src="/archdroid-org.github.io/assets/js/language.js"></script>
+
+
+	</body>
+</html>

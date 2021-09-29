@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ambiente Desktop Wayfire - Archdroid</title>
+
+		<meta name="author" content="jgmdev">
+		<meta name="web-author" content="jgmdev,redtide">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Atom Feeds -->
+		<link href="/archdroid-org.github.io/atom.xml" rel="alternate" title="News" type="application/atom+xml" />
+
+				<!-- Favicon Generator Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/archdroid-org.github.io/assets/ico/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/archdroid-org.github.io/assets/ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/archdroid-org.github.io/assets/ico/favicon-16x16.png">
+		<link rel="manifest" href="/archdroid-org.github.io/assets/ico/site.webmanifest">
+		<link rel="mask-icon" href="/archdroid-org.github.io/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/archdroid-org.github.io/assets/ico/favicon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-config" content="/archdroid-org.github.io/assets/ico/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Stylesheets -->
+		<link href="/archdroid-org.github.io/assets/css/style.min.css" rel="stylesheet" media="screen">
+				<link href="/archdroid-org.github.io/assets/css/bootstrap-table.min.css" rel="stylesheet">
+
+		<!-- Font Awesome Icons -->
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/solid.js"       integrity="sha384-Mf3ap7OwO+bjTkzM1RsrothLh38uKXvMWJ2TQPXGHqZcqfeI/cyCV+sfV0IDnBDq" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/brands.js"      integrity="sha384-b2GpqFrJizV0BUEdbrITdOA5HnxnlrErt7MlEERWd6NSJ32rHeibEvyyCuA13OAS" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.11.2/js/fontawesome.js" integrity="sha384-EYYaHDhIRoBhd/Ir/1fPnxg9rZLk/55lKtlNT5KrIcONoCS2kjf7ZWzMoCLLACeo" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+
+	<button
+		data-localize="site_scroll_top"
+		onclick="topFunction()"
+		id="scrollButton"
+		title="Go to top"
+	>
+		Top
+	</button>
+	<a href="#content" class="sr-only">Skip to content</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a
+					id="logo-link"
+					class="navbar-brand"
+					href="/archdroid-org.github.io/"
+				>
+					<img
+						class="d-inline-block align-top"
+						src="/archdroid-org.github.io/assets/img/logo.svg"
+						height="32" alt=""
+					></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-target="#navbarContent"
+					data-toggle="collapse"
+					aria-controls="navbarContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav ml-auto">
+
+						<li class="nav-item dropdown">
+							<a
+								id="navbarMenuLang"
+								class="nav-link dropdown-toggle font-weight-bold"
+								data-toggle="dropdown"
+								aria-expanded="false"
+								aria-haspopup="true"
+								href="#"
+							>
+								<img
+									width="16" height="11" style="border:0"
+									id="language-image"
+									src="/archdroid-org.github.io/assets/flags/en.png"
+								>
+							</a>
+							<div
+								id="language-menu"
+								class="dropdown-menu"
+								data-default="en"
+								aria-labelledby="navbarMenuLang"
+							>
+			
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="en"
+				href="/archdroid-org.github.io/en/"
+			>
+				<img
+					src="/archdroid-org.github.io/assets/flags/en.png"
+					width="16" height="11" style="border:0"
+				>
+				English
+			</a>
+	
+			
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="es"
+				href="/archdroid-org.github.io/es/"
+			>
+				<img
+					src="/archdroid-org.github.io/assets/flags/es.png"
+					width="16" height="11" style="border:0"
+				>
+				Español
+			</a>
+	
+			
+			<a
+				class="dropdown-item font-weight-bold"
+				data-lang="it"
+				href="/archdroid-org.github.io/it/"
+			>
+				<img
+					src="/archdroid-org.github.io/assets/flags/it.png"
+					width="16" height="11" style="border:0"
+				>
+				Italiano
+			</a>
+	
+							</div>
+						</li>
+
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_packages"
+								href="/archdroid-org.github.io/packages/"
+							>
+								Packages
+							</a>
+	
+						</li>
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_mirrors"
+								href="/archdroid-org.github.io/en/mirrors/"
+							>
+								Mirrors
+							</a>
+	
+						</li>
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_images"
+								href="/archdroid-org.github.io/en/images/"
+							>
+								Images
+							</a>
+	
+						</li>
+
+	
+		
+		
+						<li class="nav-item dropdown">
+							<a
+								id="navbar_follow_us"
+								class="nav-link dropdown-toggle font-weight-bold"
+								data-localize="menu_follow_us"
+								data-toggle="dropdown"
+								aria-expanded="false"
+								aria-haspopup="true"
+								href="#"
+							>
+								Follow Us
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbar_follow_us"
+							>
+		
+			
+				
+				<a
+					class="dropdown-item font-weight-bold"
+					href="https://github.com/archdroid-org/"
+				><i
+						class="fab fa-github fa-fw"
+						aria-hidden="true"
+					></i>&nbsp;<span data-localize="menu_github">GitHub</span>
+				</a>
+			
+		
+			
+				
+				<a
+					class="dropdown-item font-weight-bold"
+					href="/archdroid-org.github.io/atom.xml"
+				><i
+						class="fas fa-rss fa-fw"
+						aria-hidden="true"
+					></i>&nbsp;<span data-localize="menu_feed">Feed</span>
+				</a>
+			
+		
+							</div>
+	
+						</li>
+
+	
+		
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_news"
+								href="/archdroid-org.github.io/news/"
+							>
+								News
+							</a>
+	
+						</li>
+
+						<li class="nav-item">
+							<a
+								class="nav-link font-weight-bold"
+								data-localize="menu_search"
+								href="/archdroid-org.github.io/search/"
+							>
+								Search</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+	<div class="container-fluid">
+		<div id="content">
+			<article>
+
+				<h1>Ambiente Desktop Wayfire</h1>
+
+				<p><a href="https://wayfire.org/">Wayfire</a> è un ambiente leggero basato su Wayland, paragonabile a Weston
+ma con molte più funzionalità che lo rendono davvero tuo.
+Wayfire è come un Compiz per Wayland, ma è completamente indipendente.
+Inoltre, poiché non è esoso di risorse, funziona alla grande.
+(<a href="/changes/env/#wayfire">Registro Modifiche </a>)</p>
+
+<h3 id="cosè-incluso">Cos’è incluso?</h3>
+
+<ul>
+  <li>Display manager <code class="language-plaintext highlighter-rouge">lightdm</code> con <code class="language-plaintext highlighter-rouge">wayfire</code> preimpostato come gestore di sessione</li>
+  <li>Bluetooth (<code class="language-plaintext highlighter-rouge">blueman</code>)</li>
+  <li>Collegamento in rete con <code class="language-plaintext highlighter-rouge">NetworkManager</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cpupower</code> preimpostato</li>
+  <li>Yay e AUR helper</li>
+  <li>Centro software Pamac</li>
+  <li>Temi Arc per il desktop e Papirus per le icone preimpostati</li>
+  <li>Associazioni della tastiera per Wayfire preimpostati (Premi <strong>SuperKey + c</strong>
+per personalizzarli).</li>
+  <li>SSH abilitato</li>
+  <li>Caratteri shell TTY più larghi e leggibili</li>
+  <li>Lettori video <code class="language-plaintext highlighter-rouge">MPV</code> e <code class="language-plaintext highlighter-rouge">VLC</code></li>
+  <li>Un piacevole sfondo: space.jpg!</li>
+</ul>
+
+<h4 id="screenshot">Screenshot</h4>
+
+<p><img class="img-fluid" src="/archdroid-org.github.io/assets/img/wayfire-ss01.jpg" /></p>
+
+<p><img class="img-fluid" src="/archdroid-org.github.io/assets/img/wayfire-ss02.jpg" /></p>
+
+<p><img class="img-fluid" src="/archdroid-org.github.io/assets/img/wayfire-ss03.jpg" /></p>
+
+<p><img class="img-fluid" src="/archdroid-org.github.io/assets/img/wayfire-ss04.jpg" /></p>
+
+<h3 id="installazione">Installazione</h3>
+
+<p><strong>Utente normale:</strong></p>
+<ul>
+  <li>nome utente: alarm</li>
+  <li>password: alarm</li>
+</ul>
+
+<p><strong>Amministratore:</strong></p>
+<ul>
+  <li>nome utente: root</li>
+  <li>password: root</li>
+</ul>
+
+<p>Il wizard di installazione ti permetterà di modificare le password predefinite
+per una ulteriore sicurezza.</p>
+
+<h3 id="impostazioni">Impostazioni</h3>
+
+<p>Utilizzando immagini recenti, una volta visualizzato il gestore degli accessi,
+attendere alcuni secondi, in quanto il sistema dovrà aumentare la dimensione
+della partizione e preparare le impostazioni della lingua.
+Successivamente un wizard ti guiderà a terminare le impostazioni di sistema,
+quindi assicurati di aver collegato un display prima di avviare l’installazione.</p>
+
+<p>Connettiti a una rete Wi-Fi utilizzando l’applet di <code class="language-plaintext highlighter-rouge">NetworkManager</code> nella systray
+o aprendo un terminale premendo <strong>CTRL + ALT + t</strong> o digitando <code class="language-plaintext highlighter-rouge">nmtui-connect</code>.</p>
+
+<h3 id="associazioni-della-tastiera">Associazioni della tastiera</h3>
+
+<p>Di seguito solo alcune principali associazioni, puoi trovarle tutte elencate nel
+gestore di configurazione di Wayfire, avviandolo premendo <strong>SuperKey + c</strong>
+dal menu delle applicazioni, o premendo <strong>SuperKey + a</strong> per avviare <code class="language-plaintext highlighter-rouge">wofi</code>
+(simile a <code class="language-plaintext highlighter-rouge">dmenu</code> ma per Wayland) e digitando “wcm”.</p>
+
+<ul>
+  <li><strong>SuperKey + a</strong> - apre una applicazione con <code class="language-plaintext highlighter-rouge">wofi</code></li>
+  <li><strong>SuperKey + shift + a</strong> - esegui un comando con <code class="language-plaintext highlighter-rouge">bemenu</code></li>
+  <li><strong>SuperKey + c</strong> - gestore di configurazione Wayfire</li>
+  <li><strong>SuperKey + e</strong> - avvia file manager/explorer</li>
+  <li><strong>SuperKey + t</strong> - terminale a discesa</li>
+  <li><strong>Ctrl + Alt + t</strong> - terminale normale</li>
+  <li><strong>SuperKey + w</strong> - avvia Firefox</li>
+  <li><strong>SuperKey + q</strong> - termina una applicazione</li>
+  <li><strong>SuperKey + l</strong> - termina sessione, spegnimento, riavvio, ecc… con <code class="language-plaintext highlighter-rouge">wlogout</code></li>
+  <li><strong>SuperKey + Numpad_#</strong> - diverse scorciatoie di posizionamento delle finestre</li>
+  <li><strong>SuperKey + ArrowKeys</strong> - sposta la finestra in aree di lavoro diverse</li>
+  <li><strong>SuperKey + Alt + ArrowKeys</strong> - sposta in aree di lavoro diverse</li>
+  <li><strong>SuperKey + f</strong> - ingrandisce la finestra a schermo intero</li>
+  <li><strong>SuperKey + shift + f</strong> - forza la scala di una finestra a schermo intero</li>
+  <li><strong>SuperKey + s</strong> - mostra le finestre aperte dell’area di lavoro corrente</li>
+  <li><strong>SuperKey + shift + s</strong> - mostra le finestre aperte in tutte le aree di lavoro</li>
+  <li><strong>SuperKey + MouseScroll</strong> - Zoom avanti o Zoom indietro</li>
+  <li><strong>SuperKey</strong> - Workspaces View</li>
+</ul>
+
+
+			</article>
+		</div>
+			<hr>
+			<footer>
+				<p style="text-align:left;">
+					<span data-localize="footer_copyright">Copyright</span>
+						&copy; 2021
+					<a data-localize="footer_team" href="/archdroid-org.github.io/team">
+						Archdroid Team</a>
+				</p>
+			</footer>
+
+	</div>
+		<script src="/archdroid-org.github.io/assets/js/scripts.min.js"></script>		<script type="text/javascript" src="/archdroid-org.github.io/assets/js/bootstrap-table.min.js"></script>
+		<script type="text/javascript" src="/archdroid-org.github.io/assets/js/jquery.localize.js"></script>
+		<script type="text/javascript" src="/archdroid-org.github.io/assets/js/language.js"></script>
+
+
+	</body>
+</html>

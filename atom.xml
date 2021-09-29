@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Archdroid News</title>
+	<link href="https://archdroid-org.github.io/archdroid-org.github.io/atom.xml" rel="self"/>
+	<icon>https://archdroid-org.github.io/archdroid-org.github.io/assets/ico/favicon.ico</icon>
+	<link href="https://archdroid-org.github.io/archdroid-org.github.io/"/>
+	<updated>2021-09-29T11:08:42+00:00</updated>
+	<id>https://archdroid-org.github.io/archdroid-org.github.io/</id>
+
+	<entry>
+		<title>Website online</title>
+		<author><name>redtide</name></author>
+		<link href="https://archdroid-org.github.io/archdroid-org.github.io/news/2021/03/03/en-website-online.html"/>
+		<published>2021-03-03T11:34:56+00:00</published>
+		<id>https://archdroid-org.github.io/archdroid-org.github.io/news/2021/03/03/en-website-online</id>
+		<content type="html">&lt;ul&gt;
+  &lt;li&gt;Built on &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Most content is authored in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; format.&lt;/li&gt;
+  &lt;li&gt;Utilizes &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt; for easy skinning and responsive design,
+making the website available to mobile devices.&lt;/li&gt;
+  &lt;li&gt;Utilizes &lt;a href=&quot;http://fontawesome.io/&quot;&gt;FontAwesome&lt;/a&gt; and &lt;a href=&quot;https://realfavicongenerator.net/&quot;&gt;Favicon Generator&lt;/a&gt; for content and website icons.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+	</entry>
+
+</feed>
